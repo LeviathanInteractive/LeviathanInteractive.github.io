@@ -41,14 +41,14 @@
         // Simulated function to fetch blog content (replace with actual API call)
         async function fetchBlogContent(postId) {
             // Simulate a delay for fetching data
-            await new Promise(resolve => setTimeout(resolve, 300));
+           
 
             // Sample blog content (replace with real data from your server)
             const blogPosts = {
                 1: {
-                    title: "The Art of Nature",
+                    title: "Why We're Making Dread Not",
                     image: "https://via.placeholder.com/800x400",
-                    content: "Nature has always been a source of inspiration for artists..."
+                    content: "The water is dark and incredibly cold. The pressure is intense, and the stakes couldn’t be higher...After being attacked by a colossal sea creature, a small nuclear submarine outfitted for research is thrown into a high-stakes battle and must reach the surface before air runs out. Players take on the role of either the Pilot or the Mechanic and must work together to keep the submarine stable by communicating with each other, fixing failing systems, and navigating through perilous waters. Survival depends on the pair’s ability to work together under immense pressure. Failure is not an option. "
                 },
                 2: {
                     title: "Modern Art Trends",
