@@ -8,7 +8,7 @@
 
     <title>Leviathan Interactive Blogs</title>
 </head>
-<script src="script.js"></script>
+
 
 <body>
     <!-- Static Navbar -->
@@ -31,69 +31,43 @@
             A collection of blog posts from the team!
         </p>
 
-        <!-- Blog Categories -->
+                <!-- Blog Categories -->
         <div class="blog-container">
             <!-- Art Blogs (Left Side) -->
             <section id="art-blogs" class="blog-section">
                 <h2>Blogs</h2>
                 <div class="blog-list">
+                    <!-- Blog Items with Data Attributes -->
                     <div class="blog-item">
-                        <a href="ArtBlogs/ArtBlog1.html" id="myBtn">
-                            <h1>Hello</h1>
+                        <a href="#" class="blog-link" data-post-id="1">
+                            <h1>Blog Post 1</h1>
                         </a>
                     </div>
                     <div class="blog-item">
-                        <a href="ArtBlogs/ArtBlog2.html">
-
+                        <a href="#" class="blog-link" data-post-id="2">
+                            <h1>Blog Post 2</h1>
                         </a>
                     </div>
                     <div class="blog-item">
-                        <a href="ArtBlogs/ArtBlog1.html" id="myBtn">
-                            <h1>Hello</h1>
+                        <a href="#" class="blog-link" data-post-id="3">
+                            <h1>Blog Post 3</h1>
                         </a>
                     </div>
-                    <div class="blog-item">
-                        <a href="ArtBlogs/ArtBlog1.html" id="myBtn">
-                            <h1>Hello</h1>
-                        </a>
-                    </div>
-                    <div class="blog-item">
-                        <a href="ArtBlogs/ArtBlog1.html" id="myBtn">
-                            <h1>Hello</h1>
-                        </a>
-                    </div>
-                    <div class="blog-item">
-                        <a href="ArtBlogs/ArtBlog1.html" id="myBtn">
-                            <h1>Hello</h1>
-                        </a>
-                    </div>
-                    <div class="blog-item">
-                        <a href="ArtBlogs/ArtBlog1.html" id="myBtn">
-                            <h1>Hello</h1>
-                        </a>
-                    </div>
-                    <div class="blog-item">
-                        <a href="ArtBlogs/ArtBlog1.html" id="myBtn">
-                            <h1>Hello</h1>
-                        </a>
-                    </div>
-                    <div class="blog-item">
-                        <a href="ArtBlogs/ArtBlog1.html" id="myBtn">
-                            <h1>Hello</h1>
-                        </a>
-                    </div>
-                    
-                    <!-- Add more art blogs as needed -->
+                    <!-- Add more blog items as needed -->
                 </div>
             </section>
 
+            <!-- Modal Structure -->
             <div id="artModal" class="modal">
-                <div class = "art-content">
-                    <span class ="close">&times;</span>
-                    <p>Some Text in The Modal..</p>
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2 class="modal-title"></h2>
+                    <img class="modal-image" src="" alt="Blog Image">
+                    <div class="modal-body"></div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
