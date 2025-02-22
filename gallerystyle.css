@@ -61,6 +61,7 @@ header {
     border: 2px solid #ddd;
     border-radius: 10px;
     transition: transform 0.3s ease;
+    position: relative; /* Required for positioning the overlay */
 }
 
 .gallery-item:hover {
@@ -72,6 +73,40 @@ header {
     height: 100%;
     object-fit: cover;
     cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Allow clicks to pass through to the image */
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1; /* Show on hover */
+}
+
+.overlay-content {
+    text-align: center;
+}
+
+.overlay-content h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.overlay-content p {
+    margin: 5px 0 0;
+    font-size: 14px;
 }
 
 /* Lightbox styling */
