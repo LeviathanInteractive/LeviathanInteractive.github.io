@@ -27,9 +27,42 @@ const blogPosts = {
         of all ages. Will you sync or swim? `
     },
     2: {
-        title: "Blog Post 2",
-        author: "Author Name",
-        content: "<p>This is the content of the second blog post.</p>"
+        title: "Chaos in Deep Waters",
+        author: "Eleanor Berg",
+        content: `Deep beneath the water’s surface, under hundreds of tons of pressure, at the depth 
+        the furthest rays of the sun can’t reach is where the crew members of 
+        this beaten-up tin can of a submarine find themselves. If they fail to keep the machine functioning, 
+        they will be flattened in an instant by the unwavering pressure of the sea. 
+        <br><br>
+        The Mechanic sprints haphazardly through the submarine, their footsteps drowned out by the piercing alarms. 
+        They shout, their voice echoing through the metal hull, but the target of their frustration simply turns down 
+        the radio’s volume. The Pilot and the Mechanic are arguing. The Pilot, stuck in the cockpit, pours even more 
+        coffee into their "World's Best Submarine Pilot” mug with shaking hands. The sonar pings echo off the steel walls. 
+        Something is outside the submarine. The Pilot doesn’t notice, they are screaming through the comms system at the Mechanic, 
+        who just said something very rude about the Pilot. Something in the deep dark grows nearer, unseen and unheard. 
+        The submarine creaks as the clock ticks down. Water bursts out from a pipe behind a fish-themed motivational poster 
+        in the kitchen. The Mechanic can’t understand the Pilot’s directions. The Pilot can’t nderstand the submarine’s user 
+        manual. If they don’t communicate efficiently and work together, they will both die, and probably also get fired.
+        <br><br>
+        Despite the inherent horror the open ocean provides, Dread Not is not meant to be a dark and serious game. 
+        We want panic, we want some fear, but communication between the two players is the main priority. What is 
+        needed is some lightheartedness and humor to encourage the players to interact and fight playfully with 
+        each other. We wanted to make the world around the ship dark yet sublimely beautiful in addition to having 
+        a fun, stressful but not overly so, energy-filled game. The juxtaposition of those two ideas made actualizing 
+        the atmosphere a bit of a struggle. 
+        <br><br>
+        We spent a long time in predevelopment trying to nail down consistent mood and aesthetics through concept art 
+        and having watch parties of theme-related movies. Making the game pretty was straightforward: prioritizing mood 
+        lighting, god rays, pops of color, particle effects, and extra windows to watch the schools of fish– or to 
+        watch out for whatever is lurking in the dark. However, getting the general mood right was much harder. On 
+        one hand, we want the player to feel stressed, panicked, and maybe frustrated, but we also want them to enjoy 
+        the game instead of rage-quitting. We decided an effective way to give the players a break from the panic was to 
+        have environmental assets tell a story, not of seriousness and horror, but of cynical, overworked employees and 
+        an absurd, out of touch corporation. Many props were included with the sole purpose of forcing players to break 
+        out of their frustration. We determined that adding some absurdity to the game helped players relax and get more 
+        fun out of the struggle. Eventually we got the mood nailed down in concept, and now all that is left is to make 
+        it a reality. 
+        <br><br>`
     },
     3: {
         title: "Blog Post 3",
