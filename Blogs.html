@@ -36,7 +36,7 @@
                 <!-- Blog Categories -->
         <div class="blog-container">
             <!-- Art Blogs (Left Side) -->
-            <section id="art-blogs" class="blog-section">
+            <section id="blog-list" class="blog-section">
                 <h2>Blogs</h2>
                 <div class="blog-list">
                     <!-- Blog Items with Data Attributes -->
@@ -59,16 +59,13 @@
                     <!-- Add more blog items as needed -->
                 </div>
             </section>
-
-            <!-- Modal Structure -->
-            <div id="artModal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <h2 class="modal-title"></h2>
-                    <img class="modal-image" src="" alt="Blog Image">
-                    <div class="modal-body"></div>
-                </div>
-            </div>
+            
+            <!-- Blog Content Section (Hidden by Default) -->
+            <section id="blog-content" class="blog-section" style="display: none;">
+                <button id="back-to-blogs" class="back-button">← Back to Blogs</button>
+                <h2 id="blog-content-title"></h2>
+                <div id="blog-content-body"></div>
+            </section>
         </div>
     </div>
     <script src="script.js"></script>
