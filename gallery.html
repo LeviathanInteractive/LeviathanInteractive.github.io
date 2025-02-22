@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Art Gallery</title>
+    <link rel="stylesheet" href="gallerystyle.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="Blogs.html">Blog</a>
+            </li>
+            <li><a href="index.html#team">Team</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html#contact">Contact Us!</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Game Art Gallery</h1>
+        <p>Showcasing Characters, Models, Concept Art, and Screenshots from the game</p>
+        <div class="filters">
+            <button class="filter-button active" data-filter="all">All</button>
+            <button class="filter-button" data-filter="characters">Characters</button>
+            <button class="filter-button" data-filter="models">Models</button>
+            <button class="filter-button" data-filter="textures">Concept Art</button>
+            <button class="filter-button" data-filter="screenshots">Screenshots</button>
+        </div>
+    </header>
+
+    <div class="gallery">
+                <!-- Character Shots-->
+        <div class="gallery-item" data-category="characters">
+            <img src="GalleryContent\Characters\Picture1.png" alt="Character Art 1" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="characters">
+            <img src="GalleryContent\Characters\Picture2.jpg" alt="Character Art 1" class="gallery-image">
+        </div>
+
+
+                <!-- Models Shots-->
+        <div class="gallery-item" data-category="models">
+            <img src="GalleryContent\Models\1.jpg" alt="3D Model 1" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="models">
+            <img src="GalleryContent\Models\4.png" alt="3D Model 1" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="models">
+            <img src="GalleryContent\Models\5.png" alt="3D Model 1" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="models">
+            <img src="GalleryContent\Models\Picture4.jpg" alt="3D Model 1" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="models">
+            <img src="GalleryContent\Models\Picture5.png" alt="3D Model 1" class="gallery-image">
+        </div>
+
+
+                <!-- Concept Shots-->
+        <div class="gallery-item" data-category="textures">
+            <img src="GalleryContent\Concept\1.png" alt="Texture 1" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="textures">
+            <img src="GalleryContent\Concept\2.png" alt="Texture 1" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="textures">
+            <img src="GalleryContent\Concept\3.png" alt="Texture 1" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="textures">
+            <img src="GalleryContent\Concept\Picture2.png" alt="Texture 1" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="textures">
+            <img src="GalleryContent\Concept\Picture5.jpg" alt="Texture 1" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="textures">
+            <img src="GalleryContent\Concept\pilot room.PNG" alt="Texture 1" class="gallery-image">
+        </div>
+                <!-- Screenshots from Game Shots-->
+        <div class="gallery-item" data-category="screenshots">
+            <img src="GalleryContent\Screenshots\Picture3.png" alt="Screenshot 1" class="gallery-image">
+        </div>
+        <div class="gallery-item" data-category="screenshots">
+            <img src="GalleryContent\Screenshots\Picture4.png" alt="Screenshot 1" class="gallery-image">
+        </div>
+
+
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
