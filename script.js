@@ -65,7 +65,7 @@ const blogPosts = {
         <br><br>`
     },
     3: {
-        title: "THe World of Dread Not",
+        title: "The World of Dread Not",
         author: "Gabe Anderson",
         content: `The ocean – what a wonderful, diverse, horrifying place to go. Well, you’ve been sent down in a rickety 
         ole’ submarine to research a possible new species. Of course, you’re also needed to collect some extravagant 
@@ -86,7 +86,7 @@ const blogPosts = {
         lighting affected by the environment and creatures, decals and logos plastered on the walls and equipment, 
         in addition with incredible 80’s themed music to bring it all to life. While your employers may not have your 
         well-being in mind, the automated voice onboard certainly does, though it may not always be too helpful. All the 
-        world building is to help contrast suspense and humor; making a more chaotic scenario for the players to work through
+        world building is to help contrast suspense and humor; making a more chaotic scenario for the players to work through.
         `
     }
 };
