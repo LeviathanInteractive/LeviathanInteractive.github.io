@@ -65,9 +65,29 @@ const blogPosts = {
         <br><br>`
     },
     3: {
-        title: "Blog Post 3",
-        author: "Author Name",
-        content: "<p>This is the content of the third blog post.</p>"
+        title: "THe World of Dread Not",
+        author: "Gabe Anderson",
+        content: `The ocean – what a wonderful, diverse, horrifying place to go. Well, you’ve been sent down in a rickety 
+        ole’ submarine to research a possible new species. Of course, you’re also needed to collect some extravagant 
+        goods for your partner company and expedition funder, Sienna Allure. Sienna is a rising multinational conglomerate 
+        hell bent on delivering quality luxury products to its customers. Their newest hit product is a perfume made from a 
+        kind of ambergris originating from an undiscovered species that seemingly comes from an unexplored region of the ocean. 
+        The group of researchers responsible for the discovery are dying to prove this is a new species after all. To get funding 
+        and a capable submarine, they agreed to work with Sienna Allure… a deal with the devil. 
+        <br><br>
+        Cordelia, the submarine the players are on, is a 1960’s era United States nuclear powered George Washington. Sienna 
+        Allure was able to make this lucrative purchase because the government deemed it unsalvageable and useless. 
+        Luckily, Sienna Allure has also deemed you expendable! The Cordelia is an amalgamation of parts that barely 
+        function together; some components have been appropriately updated to 1980’s technology, while others are stuck 
+        in the past. Not to mention that undiscovered creature, Charlie, will make his presence known. He isn’t too happy 
+        with your intrusion on his turf. 
+        <br><br>
+        The narrative in Dread Not is driven primarily by captivating environments and immersive audio. We incorporate dynamic 
+        lighting affected by the environment and creatures, decals and logos plastered on the walls and equipment, 
+        in addition with incredible 80’s themed music to bring it all to life. While your employers may not have your 
+        well-being in mind, the automated voice onboard certainly does, though it may not always be too helpful. All the 
+        world building is to help contrast suspense and humor; making a more chaotic scenario for the players to work through
+        `
     }
 };
 
