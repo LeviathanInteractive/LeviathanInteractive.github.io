@@ -88,6 +88,37 @@ const blogPosts = {
         well-being in mind, the automated voice onboard certainly does, though it may not always be too helpful. All the 
         world building is to help contrast suspense and humor; making a more chaotic scenario for the players to work through.
         `
+    },
+    4: {
+        title: "Designing the Physical Prototype",
+        author: "Graham Higdon",
+        content: `Dread Not is a two-player co-op game wherein players work together to repair their submarine and 
+        surface before catastrophe strikes. “So, how do you repair the sub?” you ask. Well, that depends on how well 
+        you get along with your partner. The Pilot is trapped in the navigation room, along with all the solutions and 
+        manuals to fix any issues going on in the sub, and the Mechanic is the only other crew member. The Mechanic 
+        needs to walk around the sub to look for problems and provide information to the Pilot, while the Pilot needs 
+        to diagnose the problems and provide the solutions to the Mechanic – fundamentally, cooperative puzzle-solving. 
+        When designing puzzles, it’s always challenging to find a good balance between concepts that are way too difficult 
+        and not difficult enough. So that’s why we decided to employ a tactic known as physical prototyping. 
+        <br><br>
+        Physical prototyping, or paper prototyping, is the process of creating a physical model of a game concept. 
+        It can be used to explore a game's mechanics – or, in our case, puzzles – before finalizing the design. Physical 
+        prototyping has several benefits: it encourages hands-on problem-solving and, more importantly, allows for quick 
+        and easy iteration of designs. Some puzzles were more challenging to implement on paper, but overall, the process was 
+        smoother than we expected. Throughout the process, we selected puzzle ideas, sketched them on whiteboards when possible, 
+        and invited people unfamiliar with them to solve them together. This helped us determine what worked and what didn’t, 
+        which allowed us to further refine our ideas and shape our vision for how players would communicate and solve the puzzles – 
+        without wasting time implementing them in the engine. If a puzzle was too simple and could be solved by a single player, 
+        we reworked it to encourage more cooperation. If a puzzle was overly confusing, we refined the design to make key details 
+        clearer and easier to communicate.  
+        <br><br>
+        One puzzle initially featured an octagonal arrangement, where both the Mechanic and the Pilot saw eight dots forming an octagon. 
+        However, the Pilot's version also included an additional shape connecting the dots as vertices. While some groups found this puzzle 
+        enjoyable, most struggled with its complexity. To improve the experience, we simplified it by reducing the dots to six, forming a hexagon. 
+        This adjustment made the shapes less intricate while retaining the fun aspects of the puzzle. Additionally, we completely removed some puzzles 
+        that simply weren’t enjoyable enough to keep. Physical prototyping has been the lifeblood of our puzzle design, and we will certainly continue 
+        to use it when creating new puzzles. 
+        `
     }
 };
 
