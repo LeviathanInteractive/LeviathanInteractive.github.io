@@ -1,9 +1,10 @@
 :root {
-    --dark-bg: #1a1a1a;
-    --accent-blue: #4a90e2;
-    --light-text: #e0e0e0;
-    --section-bg: #2d2d2d;
-    --highlight: #3569a0;
+    --dark-bg: #161617;
+    --accent-blue: #007BFF;
+    --light-blue: #4193ec;
+    --light-text: #ffffff;
+    --section-bg: #161617;
+    --highlight: #ffe762;
 }
 
 
@@ -11,15 +12,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: var(--section-bg);
     padding-top: 70px; /* Add padding to the top of the body to account for the fixed navbar */
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--section-bg);
+    color: var(--highlight);
     padding: 20px;
     text-align: center;
+    font-size: 1.8em;
     margin-top: 0; /* Ensure no extra margin at the top */
 }
 
@@ -39,11 +41,11 @@ header {
 }
 
 .filter-button.active {
-    background-color: #007BFF;
+    background-color: var(--accent-blue);
 }
 
 .filter-button:hover {
-    background-color: #007BFF;
+    background-color: var(--accent-blue);
 }
 
 .gallery {
@@ -58,7 +60,7 @@ header {
     width: 200px;
     height: 200px;
     overflow: hidden;
-    border: 2px solid #ddd;
+    border: 2px solid var(--section-bg);
     border-radius: 10px;
     transition: transform 0.3s ease;
     position: relative; /* Required for positioning the overlay */

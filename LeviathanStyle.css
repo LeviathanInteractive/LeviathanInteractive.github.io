@@ -1,10 +1,11 @@
 /* Color Palette */
 :root {
-  --dark-bg: #1a1a1a;
-  --accent-blue: #4a90e2;
-  --light-text: #e0e0e0;
-  --section-bg: #2d2d2d;
-  --highlight: #3569a0;
+  --dark-bg: #161617;
+  --accent-blue: #007BFF;
+  --light-blue: #4193ec;
+  --light-text: #ffffff;
+  --section-bg: #161617;
+  --highlight: #ffe762;
 }
 
 /* Base Styles */
@@ -19,7 +20,7 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: #2a2a2a;
+  background-color: var(--dark-bg);
   position: fixed;
   top: 0;
   left: 0;
@@ -54,7 +55,7 @@ body {
 
 .navbar li a:hover {
   background-color: var(--highlight);
-  color: white;
+  color: var(--light-text);
 }
 
 /* Main Content */
@@ -67,7 +68,7 @@ body {
 .title {
   font-family: 'Roboto', sans-serif;
   font-size: 3.5rem;
-  color: var(--accent-blue);
+  color: var(--highlight);
   margin-bottom: 20px;
   letter-spacing: 1.5px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -75,16 +76,15 @@ body {
 
 .subtitle {
   font-size: 1.8rem;
-  color: #a0a0a0;
-  margin-bottom: 40px;
+  color: var(--light-blue);
+  margin-bottom: 10px;
   font-weight: 300;
 }
 
 .mission-statement {
   font-size: 1.1rem;
-  max-width: 800px;
-  margin: 0 auto 50px;
-  padding: 25px;
+  max-width: auto;
+  margin-bottom: 80px;
   background-color: var(--section-bg);
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -98,6 +98,7 @@ body {
 #team h2 {
   font-size: 3.6em;
   text-align: center;
+  color: var(--highlight);
   margin-bottom: 50px;
 }
 
@@ -113,7 +114,7 @@ body {
 }
 
 .department-heading {
-  color: var(--accent-blue);
+  color: var(--light-blue);
   font-size: 2rem;
   text-align: center;
   margin-bottom: 30px;
@@ -148,18 +149,21 @@ body {
 .team-member h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .team-member p {
   font-size: 0.9rem;
   color: #a0a0a0;
   margin-bottom: 15px;
+  text-align: left;
 }
 
 .bio {
   font-size: 0.9rem;
   line-height: 1.5;
   margin-bottom: 15px;
+  text-align: left;
 }
 
 .social-links a {
@@ -167,6 +171,7 @@ body {
   color: var(--accent-blue);
   text-decoration: none;
   margin-bottom: 5px;
+  text-align: left;
 }
 
 .social-links a:hover {
@@ -175,13 +180,22 @@ body {
 
 /* Contact Section */
 #contact {
-  padding: 50px 0;
+  padding: 50px 400px;
   margin-top: 50px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+#contact h2 {
+  font-size: 3.6em;
+  text-align: center;
+  color: var(--highlight);
+  margin-bottom: 50px;
 }
 
 form {
   background-color: var(--section-bg);
-  padding: 40px;
+  padding: 10px;
   border-radius: 15px;
   max-width: 600px;
   margin: 0 auto;
@@ -191,8 +205,9 @@ form {
 label {
   display: block;
   margin-bottom: 8px;
-  color: var(--accent-blue);
+  color: var(--light-blue);
   font-weight: 500;
+  text-align: left;
 }
 
 input[type="text"],

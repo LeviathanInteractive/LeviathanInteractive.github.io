@@ -1,10 +1,11 @@
 /* Color Palette */
 :root {
-    --dark-bg: #1a1a1a;
-    --accent-blue: #4a90e2;
-    --light-text: #e0e0e0;
-    --section-bg: #2d2d2d;
-    --highlight: #3569a0;
+    --dark-bg: #161617;
+    --accent-blue: #007BFF;
+    --light-blue: #4193ec;
+    --light-text: #ffffff;
+    --section-bg: #161617;
+    --highlight: #ffe762;
     --card-bg: #333333;
 }
 
@@ -67,8 +68,9 @@ body {
 
 .title {
     font-family: 'Roboto', sans-serif;
-    font-size: 3rem;
-    color: var(--accent-blue);
+    font-size: 4rem;
+    text-align: center; 
+    color: var(--highlight);
     margin-bottom: 25px;
     letter-spacing: 1.2px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -150,7 +152,7 @@ body {
 }
 
 .blog-item h3 {
-    color: var(--accent-blue);
+    color: var(--light-blue);
     margin: 0 0 15px;
     font-size: 1.3rem;
 }
