@@ -12,7 +12,7 @@
 body {
   padding-top: 80px;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: var(--dark-bg);
   color: var(--light-text);
   line-height: 1.6;
@@ -38,10 +38,12 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+  color: var(--light-text);
+  font-family: 'Roboto', sans-serif;
 }
 
 .navbar li {
-  margin: 0 25px;
+  margin: 0 auto;
 }
 
 .navbar li a {
@@ -62,7 +64,7 @@ body {
 .content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 0px;
 }
 
 .title {
@@ -191,6 +193,13 @@ body {
   text-align: center;
   color: var(--highlight);
   margin-bottom: 50px;
+}
+
+#contact p {
+  padding: 0px 10px;
+  font-size: 1.1em;
+  text-align: left;
+  max-width: auto;
 }
 
 form {

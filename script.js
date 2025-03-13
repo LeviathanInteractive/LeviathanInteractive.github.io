@@ -3,33 +3,37 @@ const blogPosts = {
     1: {
         title: "Why We're Making Dread Not",
         author: "Sarah Ziebarth",
-        content: `The water is dark and incredibly cold. The pressure is intense, and the stakes couldn’t be higher... <br> <br> 
+        content: `<br> The water is dark and incredibly cold. The pressure is intense, and the stakes couldn’t be higher... <br> <br> 
         After being attacked by a colossal sea creature, a small nuclear submarine outfitted for research is thrown into a high-stakes 
         battle and must reach the surface before air runs out. Players take on the role of either the Pilot or the Mechanic and must work 
         together to keep the submarine stable by communicating with each other, fixing failing systems, and navigating through perilous waters. 
-        Survival depends on the pair’s ability to work together under immense pressure. Failure is not an option. <br> <br> Dread Not is a virtual 
-        reality/PC asymmetric co-op game created by Leviathan Interactive, a studio comprised of 15 UW-Stout students, whose mission is to unite people 
+        Survival depends on the pair’s ability to work together under immense pressure. Failure is not an option. 
+        <br> <br> 
+        Dread Not is a virtual reality/PC asymmetric co-op game created by Leviathan Interactive, a studio comprised of 15 UW-Stout students, whose mission is to unite people 
         through games! You play as a pair of marine researchers aboard a doomed vessel that has suffered severe damage and only has 10 minutes before running out of oxygen. 
         Your only chance of reaching the surface is by making emergency repairs, which are completed through cooperative and individual puzzles scattered throughout the 
         system rooms of the submarine. The Pilot, who can be played on either PC or in VR, is constrained to a single room where they control navigation and relay 
         information to the Mechanic in order to keep necessary systems up and running. Alternatively, the Mechanic, played only on PC, is able to move between all 
         other rooms and must repair systems under the Pilot's guidance. This game is all about communication and cooperation. In a world that’s increasingly 
         connected, inspiring people to reach out and work with each other is great motivation for our team. We believe that by creating a game that not only 
-        brings people together, but literally requires two to play, we can gradually make the world a better and more entertaining place. <br> <br> Generating a fun, 
-        yet semi-chaotic atmosphere for players that allows them to really feel the tension of the situation was also key to the idea of this game, and what better way 
+        brings people together, but literally requires two to play, we can gradually make the world a better and more entertaining place. 
+        <br> <br> 
+        Generating a fun, yet semi-chaotic atmosphere for players that allows them to really feel the tension of the situation was also key to the idea of this game, and what better way 
         to do that than have both players be in completely different roles with simple, yet interconnected tasks. This is what led our team to implement both PC and 
         VR; we wanted to enhance that asymmetric experience by having two distinct modes of immersion and additionally add another layer of interactivity to the 
         gameplay of the Pilot. Transporting the more stationary role of the two into the environment in such a way that allows them to feel as though they’re 
         actually there helps intensify and incorporate action into an experience that otherwise doesn’t provide much space to explore. However, there is still PC 
         compatibility for the Pilot available for players who prefer a traditional platform, seeing as getting the game into as many hands as possible was another 
-        team goal of ours. <br> <br> Needless to say, with inspirations taken from real 1960’s Navy Nuclear Ballistic Missile submarines of the George Washington 
+        team goal of ours. 
+        <br> <br> 
+        Needless to say, with inspirations taken from real 1960’s Navy Nuclear Ballistic Missile submarines of the George Washington 
         Class combined with the 80's vibes found in cinematic classics such as The Hunt for Red October and Jaws, Dread Not is sure to be an absolute blast for players 
         of all ages. Will you sync or swim? `
     },
     2: {
         title: "Chaos in Deep Waters",
         author: "Eleanor Berg",
-        content: `Deep beneath the water’s surface, under hundreds of tons of pressure, at the depth 
+        content: `<br> Deep beneath the water’s surface, under hundreds of tons of pressure, at the depth 
         the furthest rays of the sun can’t reach is where the crew members of 
         this beaten-up tin can of a submarine find themselves. If they fail to keep the machine functioning, 
         they will be flattened in an instant by the unwavering pressure of the sea. 
@@ -61,13 +65,12 @@ const blogPosts = {
         an absurd, out of touch corporation. Many props were included with the sole purpose of forcing players to break 
         out of their frustration. We determined that adding some absurdity to the game helped players relax and get more 
         fun out of the struggle. Eventually we got the mood nailed down in concept, and now all that is left is to make 
-        it a reality. 
-        <br><br>`
+        it a reality.`
     },
     3: {
         title: "The World of Dread Not",
         author: "Gabe Anderson",
-        content: `The ocean – what a wonderful, diverse, horrifying place to go. Well, you’ve been sent down in a rickety 
+        content: `<br> The ocean – what a wonderful, diverse, horrifying place to go. Well, you’ve been sent down in a rickety 
         ole’ submarine to research a possible new species. Of course, you’re also needed to collect some extravagant 
         goods for your partner company and expedition funder, Sienna Allure. Sienna is a rising multinational conglomerate 
         hell bent on delivering quality luxury products to its customers. Their newest hit product is a perfume made from a 
@@ -92,7 +95,7 @@ const blogPosts = {
     4: {
         title: "Designing the Physical Prototype",
         author: "Graham Higdon",
-        content: `Dread Not is a two-player co-op game wherein players work together to repair their submarine and 
+        content: `<br> Dread Not is a two-player co-op game wherein players work together to repair their submarine and 
         surface before catastrophe strikes. “So, how do you repair the sub?” you ask. Well, that depends on how well 
         you get along with your partner. The Pilot is trapped in the navigation room, along with all the solutions and 
         manuals to fix any issues going on in the sub, and the Mechanic is the only other crew member. The Mechanic 
@@ -118,6 +121,36 @@ const blogPosts = {
         This adjustment made the shapes less intricate while retaining the fun aspects of the puzzle. Additionally, we completely removed some puzzles 
         that simply weren’t enjoyable enough to keep. Physical prototyping has been the lifeblood of our puzzle design, and we will certainly continue 
         to use it when creating new puzzles. 
+        `
+    },
+    5: {
+        title: "Implementing Puzzles in Engine",
+        author: "Jacob Richardt",
+        content: `<br> After being attacked by a creature in the deep, your ship is in disrepair and, playing as the Mechanic, 
+        you must now traverse the submarine repairing what you can so you can escape to the surface. These repairs are a 
+        central part of our game and an essential step to creating our first build. To ensure this build was playable, we had 
+        two developers prototyping and programming puzzles. Our first puzzle prototype was one where you match symbols with a 
+        solution showing the correct symbols, and the second was a wire connection puzzle, where you connect nodes together 
+        with wires to complete the circuit. 
+        <br><br>
+        After the interactable aspects of the puzzles were completed, we had to ensure that they could connect to another object 
+        that shows the correct solution for the given puzzle. Since the wire puzzles were finished before the network was set up, 
+        we spent some time adding particle effects for when the wrong wire is connected. This electrical spark particle system is 
+        accompanied by a short delay before any player input is detected by the puzzle.  
+        <br><br>
+        After that, we simply threw them into the game level, and they worked perfectly the first time, like all code does.
+        For any coders reading this, you know that that was clearly a lie. When trying to implement our puzzles in a networked system, 
+        we ran into a lot of problems. Once all of those were solved, we then both began to dive deep into the networking code to 
+        allow the solution to show correctly on the host or client when the puzzle is on the other.
+        <br><br>
+        Networking, we found, was very inconvenient. Not only did we have to send the puzzle solutions through blueprints, but 
+        now also through the network. We spent many long nights in the code mines until finally we figured out how to connect them 
+        between client and host devices.
+        <br><br>
+        Moving forward, we are transitioning to more C++ code for our puzzles instead of blueprint while we work on bug fixing for 
+        the current puzzles. We also will be reading between the puzzles in game with the AI for our creature so that the puzzles will 
+        activate when the submarine is damaged. We have already added code to activate and deactivate, so we should be able to connect 
+        easily, said every programmer before having to spend hours making it work.
         `
     }
 };
