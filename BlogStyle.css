@@ -70,23 +70,9 @@ body {
 
 .title {
     font-family: 'Roboto', sans-serif;
-    font-size: 4rem;
+    font-size: 3.9rem;
     text-align: center; 
     color: var(--highlight);
-    margin-bottom: 10px;
-    letter-spacing: 1.2px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.mission-statement {
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto 50px;
-    padding: 25px;
-    background-color: var(--section-bg);
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    line-height: 1.8;
 }
 
 /* Blog Container */
