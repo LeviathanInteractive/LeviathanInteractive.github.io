@@ -7,7 +7,7 @@ const blogPosts = {
         After being attacked by a colossal sea creature, a small nuclear submarine outfitted for research is thrown into a high-stakes 
         battle and must reach the surface before air runs out. Players take on the role of either the Pilot or the Mechanic and must work 
         together to keep the submarine stable by communicating with each other, fixing failing systems, and navigating through perilous waters. 
-        Survival depends on the pair’s ability to work together under immense pressure. Failure is not an option. 
+        Survival depends on the pair’s ability to work together under immense pressure. Failure is not an option.
         <br> <br> 
         Dread Not is a virtual reality/PC asymmetric co-op game created by Leviathan Interactive, a studio comprised of 15 UW-Stout students, whose mission is to unite people 
         through games! You play as a pair of marine researchers aboard a doomed vessel that has suffered severe damage and only has 10 minutes before running out of oxygen. 
@@ -28,7 +28,8 @@ const blogPosts = {
         <br> <br> 
         Needless to say, with inspirations taken from real 1960’s Navy Nuclear Ballistic Missile submarines of the George Washington 
         Class combined with the 80's vibes found in cinematic classics such as The Hunt for Red October and Jaws, Dread Not is sure to be an absolute blast for players 
-        of all ages. Will you sync or swim? `
+        of all ages. Will you sync or swim? `,
+        image: "BlogImages/Blog1/Sub_DesignPillars_EK.png"
     },
     2: {
         title: "Chaos in Deep Waters",
@@ -122,6 +123,7 @@ const blogPosts = {
         that simply weren’t enjoyable enough to keep. Physical prototyping has been the lifeblood of our puzzle design, and we will certainly continue 
         to use it when creating new puzzles. 
         `
+
     },
     5: {
         title: "Implementing Puzzles in Engine",
@@ -159,6 +161,7 @@ const blogPosts = {
 function displayBlogContent(postId) {
     const blogContentSection = document.getElementById("blog-content");
     const blogListSection = document.getElementById("blog-list");
+    
 
     // Hide the blog list and show the blog content
     blogListSection.style.display = "none";
@@ -170,6 +173,7 @@ function displayBlogContent(postId) {
     document.getElementById("blog-content-body").innerHTML = `
         <p><em>By ${blogPost.author}</em></p>
         ${blogPost.content}
+        <img src="${blogPost.image}" alt="Blog Image2" />
     `;
 }
 
