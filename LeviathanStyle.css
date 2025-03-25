@@ -86,7 +86,23 @@ body {
 .mission-statement {
   font-size: 1.1rem;
   max-width: auto;
-  margin-bottom: 80px;
+  background-color: var(--section-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.info-statement {
+  font-size: 0.9rem;
+  max-width: auto;
+  background-color: var(--section-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.itch-statement {
+  font-size: 1.1rem;
+  max-width: auto;
+  margin-bottom: 60px;
   background-color: var(--section-bg);
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
