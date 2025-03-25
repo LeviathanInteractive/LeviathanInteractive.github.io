@@ -28,7 +28,8 @@ const blogPosts = {
         <br> <br> 
         Needless to say, with inspirations taken from real 1960’s Navy Nuclear Ballistic Missile submarines of the George Washington 
         Class combined with the 80's vibes found in cinematic classics such as The Hunt for Red October and Jaws, Dread Not is sure to be an absolute blast for players 
-        of all ages. Will you sync or swim? `,
+        of all ages. Will you sync or swim? 
+        <br> <br>`,
         image: "BlogImages/Blog1/Sub_DesignPillars_EK.png"
     },
     2: {
@@ -173,7 +174,7 @@ function displayBlogContent(postId) {
     document.getElementById("blog-content-body").innerHTML = `
         <p><em>By ${blogPost.author}</em></p>
         ${blogPost.content}
-        <img src="${blogPost.image}" alt="Blog Image2" />
+        <img src="${blogPost.image}" alt="Blog Image" style="max-height:500px;display:block;margin:auto;"/>
     `;
 }
 
