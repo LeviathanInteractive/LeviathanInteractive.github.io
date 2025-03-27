@@ -17,7 +17,9 @@ const blogPosts = {
         other rooms and must repair systems under the Pilot's guidance. This game is all about communication and cooperation. In a world that’s increasingly 
         connected, inspiring people to reach out and work with each other is great motivation for our team. We believe that by creating a game that not only 
         brings people together, but literally requires two to play, we can gradually make the world a better and more entertaining place. 
-        <br> <br> 
+        <br>
+        <!-- IMAGE_PLACEHOLDER_1 -->
+        <br> 
         Generating a fun, yet semi-chaotic atmosphere for players that allows them to really feel the tension of the situation was also key to the idea of this game, and what better way 
         to do that than have both players be in completely different roles with simple, yet interconnected tasks. This is what led our team to implement both PC and 
         VR; we wanted to enhance that asymmetric experience by having two distinct modes of immersion and additionally add another layer of interactivity to the 
@@ -25,12 +27,17 @@ const blogPosts = {
         actually there helps intensify and incorporate action into an experience that otherwise doesn’t provide much space to explore. However, there is still PC 
         compatibility for the Pilot available for players who prefer a traditional platform, seeing as getting the game into as many hands as possible was another 
         team goal of ours. 
-        <br> <br> 
+        <br> 
+        <!-- IMAGE_PLACEHOLDER_2 -->
+        <br> 
         Needless to say, with inspirations taken from real 1960’s Navy Nuclear Ballistic Missile submarines of the George Washington 
         Class combined with the 80's vibes found in cinematic classics such as The Hunt for Red October and Jaws, Dread Not is sure to be an absolute blast for players 
         of all ages. Will you sync or swim? 
         <br> <br>`,
-        image: "BlogImages/Blog1/Sub_DesignPillars_EK.png"
+        images: [
+            "BlogImages/Blog1/Sub_DesignPillars_EK.png",
+            "BlogImages/Blog1/DreadNot_InProgressPoster2.png"
+        ]
     },
     2: {
         title: "Chaos in Deep Waters",
@@ -124,7 +131,6 @@ const blogPosts = {
         that simply weren’t enjoyable enough to keep. Physical prototyping has been the lifeblood of our puzzle design, and we will certainly continue 
         to use it when creating new puzzles. 
         `
-
     },
     5: {
         title: "Implementing Puzzles in Engine",
@@ -170,12 +176,29 @@ function displayBlogContent(postId) {
 
     // Populate the blog content
     const blogPost = blogPosts[postId];
+
+    let formattedContent = blogPost.content;
+    if (blogPost.images && blogPost.images.length > 0) {
+        blogPost.images.forEach((image, index) => {
+            formattedContent = formattedContent.replace(
+                `<!-- IMAGE_PLACEHOLDER_${index + 1} -->`,
+                `<img src="${image}" alt="Blog Image ${index + 1}" style="max-width:100%;display:block;margin:20px auto;">`
+            );
+        });
+    }
+
     document.getElementById("blog-content-title").textContent = blogPost.title;
-    document.getElementById("blog-content-body").innerHTML = `
+    /*document.getElementById("blog-content-body").innerHTML = `
         <p><em>By ${blogPost.author}</em></p>
         ${blogPost.content}
         <img src="${blogPost.image}" alt="Blog Image" style="max-height:500px;display:block;margin:auto;"/>
     `;
+    */
+    document.getElementById("blog-content-body").innerHTML = `
+    <p><em>By ${blogPost.author}</em></p>
+    ${formattedContent}
+    `;
+
 
     // Adjusts URL for specific blog
     const blogSlug = blogPost.title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
