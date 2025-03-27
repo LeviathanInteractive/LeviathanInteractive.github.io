@@ -8,7 +8,8 @@ const blogPosts = {
         battle and must reach the surface before air runs out. Players take on the role of either the Pilot or the Mechanic and must work 
         together to keep the submarine stable by communicating with each other, fixing failing systems, and navigating through perilous waters. 
         Survival depends on the pair’s ability to work together under immense pressure. Failure is not an option.
-        <br> <br> 
+        <br> 
+        <!-- IMAGE_PLACEHOLDER_1 -->
         Dread Not is a virtual reality/PC asymmetric co-op game created by Leviathan Interactive, a studio comprised of 15 UW-Stout students, whose mission is to unite people 
         through games! You play as a pair of marine researchers aboard a doomed vessel that has suffered severe damage and only has 10 minutes before running out of oxygen. 
         Your only chance of reaching the surface is by making emergency repairs, which are completed through cooperative and individual puzzles scattered throughout the 
@@ -18,7 +19,6 @@ const blogPosts = {
         connected, inspiring people to reach out and work with each other is great motivation for our team. We believe that by creating a game that not only 
         brings people together, but literally requires two to play, we can gradually make the world a better and more entertaining place. 
         <br>
-        <!-- IMAGE_PLACEHOLDER_1 -->
         <br> 
         Generating a fun, yet semi-chaotic atmosphere for players that allows them to really feel the tension of the situation was also key to the idea of this game, and what better way 
         to do that than have both players be in completely different roles with simple, yet interconnected tasks. This is what led our team to implement both PC and 
@@ -28,15 +28,15 @@ const blogPosts = {
         compatibility for the Pilot available for players who prefer a traditional platform, seeing as getting the game into as many hands as possible was another 
         team goal of ours. 
         <br> 
-        <!-- IMAGE_PLACEHOLDER_2 -->
         <br> 
         Needless to say, with inspirations taken from real 1960’s Navy Nuclear Ballistic Missile submarines of the George Washington 
         Class combined with the 80's vibes found in cinematic classics such as The Hunt for Red October and Jaws, Dread Not is sure to be an absolute blast for players 
         of all ages. Will you sync or swim? 
-        <br> <br>`,
+        <br>
+        <!-- IMAGE_PLACEHOLDER_2 -->`,
         images: [
-            "BlogImages/Blog1/Sub_DesignPillars_EK.png",
-            "BlogImages/Blog1/DreadNot_InProgressPoster2.png"
+            "BlogImages/Blog1/DreadNot_InProgressPoster3.png",
+            "BlogImages/Blog1/Sub_DesignPillars_EK.png"
         ]
     },
     2: {
@@ -63,7 +63,8 @@ const blogPosts = {
         each other. We wanted to make the world around the ship dark yet sublimely beautiful in addition to having 
         a fun, stressful but not overly so, energy-filled game. The juxtaposition of those two ideas made actualizing 
         the atmosphere a bit of a struggle. 
-        <br><br>
+        <br>
+        <!-- IMAGE_PLACEHOLDER_1 -->
         We spent a long time in predevelopment trying to nail down consistent mood and aesthetics through concept art 
         and having watch parties of theme-related movies. Making the game pretty was straightforward: prioritizing mood 
         lighting, god rays, pops of color, particle effects, and extra windows to watch the schools of fish– or to 
@@ -74,7 +75,13 @@ const blogPosts = {
         an absurd, out of touch corporation. Many props were included with the sole purpose of forcing players to break 
         out of their frustration. We determined that adding some absurdity to the game helped players relax and get more 
         fun out of the struggle. Eventually we got the mood nailed down in concept, and now all that is left is to make 
-        it a reality.`
+        it a reality.
+        <br>
+        <!-- IMAGE_PLACEHOLDER_2 -->`,
+        images: [
+            "BlogImages/Blog2/pilotroom.PNG",
+            "BlogImages/Blog2/PropModels.png"
+        ]
     },
     3: {
         title: "The World of Dread Not",
@@ -86,20 +93,27 @@ const blogPosts = {
         kind of ambergris originating from an undiscovered species that seemingly comes from an unexplored region of the ocean. 
         The group of researchers responsible for the discovery are dying to prove this is a new species after all. To get funding 
         and a capable submarine, they agreed to work with Sienna Allure… a deal with the devil.
-        <br><br>
+        <br>
+        <!-- IMAGE_PLACEHOLDER_1 -->
         Cordelia, the submarine the players are on, is a 1960’s era United States nuclear powered George Washington. Sienna 
         Allure was able to make this lucrative purchase because the government deemed it unsalvageable and useless. 
         Luckily, Sienna Allure has also deemed you expendable! The Cordelia is an amalgamation of parts that barely 
         function together; some components have been appropriately updated to 1980’s technology, while others are stuck 
         in the past. Not to mention that undiscovered creature, Charlie, will make his presence known. He isn’t too happy 
         with your intrusion on his turf. 
-        <br><br>
+        <br>
+        <!-- IMAGE_PLACEHOLDER_2 -->
         The narrative in Dread Not is driven primarily by captivating environments and immersive audio. We incorporate dynamic 
         lighting affected by the environment and creatures, decals and logos plastered on the walls and equipment, 
         in addition with incredible 80’s themed music to bring it all to life. While your employers may not have your 
         well-being in mind, the automated voice onboard certainly does, though it may not always be too helpful. All the 
         world building is to help contrast suspense and humor; making a more chaotic scenario for the players to work through.
-        `
+        <!-- IMAGE_PLACEHOLDER_3 -->`,
+        images: [
+            "BlogImages/Blog3/Company_Logo.png",
+            "BlogImages/Blog3/CharlieConcept.png",
+            "BlogImages/Blog3/labConcept.png"
+        ]
     },
     4: {
         title: "Designing the Physical Prototype",
@@ -112,7 +126,8 @@ const blogPosts = {
         to diagnose the problems and provide the solutions to the Mechanic – fundamentally, cooperative puzzle-solving. 
         When designing puzzles, it’s always challenging to find a good balance between concepts that are way too difficult 
         and not difficult enough. So that’s why we decided to employ a tactic known as physical prototyping. 
-        <br><br>
+        <br>
+        <!-- IMAGE_PLACEHOLDER_1 -->
         Physical prototyping, or paper prototyping, is the process of creating a physical model of a game concept. 
         It can be used to explore a game's mechanics – or, in our case, puzzles – before finalizing the design. Physical 
         prototyping has several benefits: it encourages hands-on problem-solving and, more importantly, allows for quick 
@@ -123,14 +138,19 @@ const blogPosts = {
         without wasting time implementing them in the engine. If a puzzle was too simple and could be solved by a single player, 
         we reworked it to encourage more cooperation. If a puzzle was overly confusing, we refined the design to make key details 
         clearer and easier to communicate.  
-        <br><br>
+        <br>
+        <!-- IMAGE_PLACEHOLDER_2 -->
         One puzzle initially featured an octagonal arrangement, where both the Mechanic and the Pilot saw eight dots forming an octagon. 
         However, the Pilot's version also included an additional shape connecting the dots as vertices. While some groups found this puzzle 
         enjoyable, most struggled with its complexity. To improve the experience, we simplified it by reducing the dots to six, forming a hexagon. 
         This adjustment made the shapes less intricate while retaining the fun aspects of the puzzle. Additionally, we completely removed some puzzles 
         that simply weren’t enjoyable enough to keep. Physical prototyping has been the lifeblood of our puzzle design, and we will certainly continue 
         to use it when creating new puzzles. 
-        `
+        `,
+        images: [
+            "BlogImages/Blog4/PhysicalPrototype_1.jpg",
+            "BlogImages/Blog4/PhysicalProtypeAnswers.png"
+        ]
     },
     5: {
         title: "Implementing Puzzles in Engine",
@@ -141,7 +161,8 @@ const blogPosts = {
         two developers prototyping and programming puzzles. Our first puzzle prototype was one where you match symbols with a 
         solution showing the correct symbols, and the second was a wire connection puzzle, where you connect nodes together 
         with wires to complete the circuit. 
-        <br><br>
+        <br>
+        <!-- IMAGE_PLACEHOLDER_1 -->
         After the interactable aspects of the puzzles were completed, we had to ensure that they could connect to another object 
         that shows the correct solution for the given puzzle. Since the wire puzzles were finished before the network was set up, 
         we spent some time adding particle effects for when the wrong wire is connected. This electrical spark particle system is 
@@ -155,12 +176,17 @@ const blogPosts = {
         Networking, we found, was very inconvenient. Not only did we have to send the puzzle solutions through blueprints, but 
         now also through the network. We spent many long nights in the code mines until finally we figured out how to connect them 
         between client and host devices.
-        <br><br>
+        <br>
+        <!-- IMAGE_PLACEHOLDER_2 -->
         Moving forward, we are transitioning to more C++ code for our puzzles instead of blueprint while we work on bug fixing for 
         the current puzzles. We also will be reading between the puzzles in game with the AI for our creature so that the puzzles will 
         activate when the submarine is damaged. We have already added code to activate and deactivate, so we should be able to connect 
         easily, said every programmer before having to spend hours making it work.
-        `
+        `,
+        images: [
+            "BlogImages/Blog5/image.png",
+            "BlogImages/Blog5/image (1).png"
+        ]
     }
 };
 
