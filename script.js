@@ -78,7 +78,7 @@ const blogPosts = {
         hell bent on delivering quality luxury products to its customers. Their newest hit product is a perfume made from a 
         kind of ambergris originating from an undiscovered species that seemingly comes from an unexplored region of the ocean. 
         The group of researchers responsible for the discovery are dying to prove this is a new species after all. To get funding 
-        and a capable submarine, they agreed to work with Sienna Allure… a deal with the devil. 
+        and a capable submarine, they agreed to work with Sienna Allure… a deal with the devil. Hello Mario.
         <br><br>
         Cordelia, the submarine the players are on, is a 1960’s era United States nuclear powered George Washington. Sienna 
         Allure was able to make this lucrative purchase because the government deemed it unsalvageable and useless. 
@@ -177,7 +177,7 @@ function displayBlogContent(postId) {
         <img src="${blogPost.image}" alt="Blog Image" style="max-height:500px;display:block;margin:auto;"/>
     `;
 
-    // TESTING
+    // Adjusts URL for specific blog
     const blogSlug = blogPost.title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
     history.pushState({ postId }, "", `#${blogSlug}`);
 }
@@ -191,7 +191,6 @@ function goBackToBlogList() {
     blogContentSection.style.display = "none";
     blogListSection.style.display = "block";
 
-    //TESTING
     // Reset the URL
     history.pushState({}, "", "Blogs.html");
 }
@@ -229,7 +228,7 @@ document.addEventListener("DOMContentLoaded", () => {
         goBackToBlogList();
     });
 
-    // TESTING
+    // Keeps current page + URL on refresh
     loadBlogFromURL();
 });
         document.addEventListener('DOMContentLoaded', function() {
@@ -279,6 +278,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
             });
         });
+        // Handles URL changes when browser back button is used
         window.addEventListener("popstate", function (event) {
             if (event.state && event.state.postId) {
                 displayBlogContent(event.state.postId);
