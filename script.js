@@ -176,6 +176,10 @@ function displayBlogContent(postId) {
         ${blogPost.content}
         <img src="${blogPost.image}" alt="Blog Image" style="max-height:500px;display:block;margin:auto;"/>
     `;
+
+    // TESTING
+    const blogSlug = blogPost.title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+    history.pushState({ postId }, "", `#${blogSlug}`);
 }
 
 // Function to go back to the blog list
@@ -186,6 +190,10 @@ function goBackToBlogList() {
     // Hide the blog content and show the blog list
     blogContentSection.style.display = "none";
     blogListSection.style.display = "block";
+
+    //TESTING
+    // Reset the URL
+    history.pushState({}, "", "Blogs.html");
 }
 
 // Event listeners
