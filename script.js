@@ -218,7 +218,7 @@ function goBackToBlogList() {
     history.pushState({}, "", "Blogs.html");
 }
 
-// TESTING
+// Keeps current page + URL on refresh
 function loadBlogFromURL() {
     const hash = window.location.hash.substring(1);
     if (hash) {
@@ -250,8 +250,6 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
         goBackToBlogList();
     });
-
-    // Keeps current page + URL on refresh
     loadBlogFromURL();
 });
         document.addEventListener('DOMContentLoaded', function() {
