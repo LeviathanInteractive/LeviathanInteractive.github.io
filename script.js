@@ -107,7 +107,7 @@ const blogPosts = {
         lighting affected by the environment and creatures, decals and logos plastered on the walls and equipment, 
         in addition with incredible 80’s themed music to bring it all to life. While your employers may not have your 
         well-being in mind, the automated voice onboard certainly does, though it may not always be too helpful. All the 
-        world building is to help contrast suspense and humor; making a more chaotic scenario for the players to work through.
+        world building is to help contrast suspense and humor, making a more chaotic scenario for the players to work through.
         <!-- IMAGE_PLACEHOLDER_3 -->`,
         images: [
             "BlogImages/Blog3/Company_Logo.png",
