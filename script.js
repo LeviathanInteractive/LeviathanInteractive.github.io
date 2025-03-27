@@ -196,6 +196,20 @@ function goBackToBlogList() {
     history.pushState({}, "", "Blogs.html");
 }
 
+// TESTING
+function loadBlogFromURL() {
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+        const postId = Object.keys(blogPosts).find(id =>
+            blogPosts[id].title.toLowerCase().replace(/[^a-z0-9]+/g, "-") === hash
+        );
+
+        if (postId) {
+            displayBlogContent(postId);
+        }
+    }
+}
+
 // Event listeners
 document.addEventListener("DOMContentLoaded", () => {
     // Add click event listeners to blog links
@@ -214,6 +228,9 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
         goBackToBlogList();
     });
+
+    // TESTING
+    loadBlogFromURL();
 });
         document.addEventListener('DOMContentLoaded', function() {
             const galleryImages = document.querySelectorAll('.gallery-image');
@@ -262,3 +279,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
             });
         });
+        window.addEventListener("popstate", function (event) {
+            if (event.state && event.state.postId) {
+                displayBlogContent(event.state.postId);
+            } else {
+                goBackToBlogList();
+            }
+        });        
