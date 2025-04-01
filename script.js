@@ -208,6 +208,75 @@ const blogPosts = {
             "Symbol puzzle prototype in engine",
             "Wire puzzle prototype in engine"
         ]
+    },
+    6: {
+        title: "The Submarine as Seen by the Mechanic",
+        author: "Samuel Lambert and Zach Adler",
+        content: `<br> Level design truly makes or breaks the flow and nature of one's game through the use of floor plans, 
+        lighting, and ease of access to players. Dread Not uses the realistic environment of a submarine and gamifies it in order 
+        to make the game easy to understand while holding true to the “duct-tape core” (meaning improvisational or not optimal) 
+        design pillar of our game.   
+        <br>
+        <!-- IMAGE_PLACEHOLDER_1 -->
+        To accommodate a comfortable game camera for players in the role of the roving Mechanic, the submarine level design combines 
+        elements of the realistic interiors of such a vessel with scale changes to accommodate gameplay needs. This allowed us to create 
+        an experience that has enough of the authentic feel to be believable while still being our own designs that adhere to the 
+        environmental storytelling required by the game narrative.  
+        <br>
+        <!-- IMAGE_PLACEHOLDER_2 -->
+        <!-- IMAGE_PLACEHOLDER_3 -->
+        Specifically, in fitting with “duct-tape core,” the game lore establishes that the submarine has been retrofitted, somewhat 
+        broken down, and even hastily taped back together in places. Areas like the reactor room, for example, show the passage of time 
+        and change in use; the original powerplant has been removed, leading to the mid deck of the reactor room being replaced with 
+        catwalk-style structures held up by beams instead of an actual deck floor.  
+        <br>
+        <!-- IMAGE_PLACEHOLDER_4 -->
+        The radio room, similar to other portions of the submarine, hosts a jumble of different systems and radio equipment stacked 
+        upon itself. This room showcases the chaotic nature of gameplay through its design inside the vessel as well as takes on the 
+        semi-functional radio room it is meant to be. A tight, yet easy-to-traverse area for players to maneuver, it is actually crowded 
+        only in its visual components, which enhances game feel while the players solve puzzles to make repairs.
+        <br>
+        <!-- IMAGE_PLACEHOLDER_5 -->
+        <!-- IMAGE_PLACEHOLDER_6 -->
+        The torpedo room is another example of this design philosophy, seeing as its handling systems are held in place by steel girders 
+        more closely compared to that of a construction site than that of a nuclear submarine. Only a pair of torpedo tubes exists within 
+        the entire space, and otherwise there’s storage below the deck under a pair of vertical bulkheads. In other words, this is a room 
+        that could clearly have had more built within it if its design had been more carefully considered by the company the characters work 
+        for, which again emphasizes the concepts of improvisation and haphazardness demonstrated by the overarching narrative.
+        <br>
+        <!-- IMAGE_PLACEHOLDER_7 -->
+        The rooms thus far explained in Dread Not have crucial roles for a successful submarine research expedition. However, the lab room 
+        holding a specimen inside a glass tank gives credence to why our Mechanic and Pilot are on such a mission. Exploring this narrative 
+        driven area hints at what they may be after, but the danger lurking in the surrounding waters is what will alarm players into an 
+        urgent state of play.
+        <br>
+        <!-- IMAGE_PLACEHOLDER_8 -->
+        Dread Not’s consideration of unique level design to refit a military submarine into a research vessel allows the concept to stay 
+        true to the “duct-tape core” gameplay it offers while still being friendly to players. Additionally, creating a visually aesthetic 
+        layout that’s full of complimentary visual storytelling allows players to immerse themselves more fully into our narrative and 
+        gameplay simply by navigating the environment. Gamers, be ready to explore as the Mechanic, guide as the Pilot, and try not to 
+        succumb to the pressure!
+        `,
+        images: [
+            "BlogImages/Blog6/pic5.PNG",
+            "BlogImages/Blog6/pic4.PNG",
+            "BlogImages/Blog6/pic3.PNG",
+            "BlogImages/Blog6/pic2.PNG",
+            "BlogImages/Blog6/CommsRecent1.PNG",
+            "BlogImages/Blog6/Commsrecent2.PNG",
+            "BlogImages/Blog6/pic1.PNG",
+            "BlogImages/Blog6/LabsRecent.PNG"
+        ],
+        imageCaptions: [
+            "In progress reactor room",
+            "In progress server room",
+            "In progress hallway",
+            "In progress reactor room",
+            "In progress radio room",
+            "In progress radio room",
+            "In progress turbine room",
+            "In progress laboratory"
+        ]
     }
 };
 
