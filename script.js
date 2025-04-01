@@ -37,6 +37,10 @@ const blogPosts = {
         images: [
             "BlogImages/Blog1/DreadNot_InProgressPoster3.png",
             "BlogImages/Blog1/Sub_DesignPillars_EK.png"
+        ],
+        imageCaptions: [
+            "Dread Not main art.",
+            "The design pillars that guided our development."
         ]
     },
     2: {
@@ -206,9 +210,13 @@ function displayBlogContent(postId) {
     let formattedContent = blogPost.content;
     if (blogPost.images && blogPost.images.length > 0) {
         blogPost.images.forEach((image, index) => {
+            const caption = blogPost.imageCaptions ? blogPost.imageCaptions[index] : "";
             formattedContent = formattedContent.replace(
                 `<!-- IMAGE_PLACEHOLDER_${index + 1} -->`,
-                `<img src="${image}" alt="Blog Image ${index + 1}" style="max-width:100%;display:block;margin:20px auto;">`
+                `<div style="text-align:center; margin: 20px 0;">
+                    <img src="${image}" alt="Blog Image ${index + 1}" style="max-width:100%; display:block; margin:10px auto;">
+                    <p style="font-style: italic; font-size: 14px; color: #666;">${caption}</p>
+                </div>`
             );
         });
     }
