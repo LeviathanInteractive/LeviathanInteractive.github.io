@@ -277,6 +277,54 @@ const blogPosts = {
             "In progress turbine room",
             "In progress laboratory"
         ]
+    },
+    7: {
+        title: "The Pilot Room: Blending Functionality with Design",
+        author: "Ryan Thiede",
+        content: `
+        <!-- IMAGE_PLACEHOLDER_1 -->
+        <!-- IMAGE_PLACEHOLDER_2 -->
+        The pilot room is the main space for the Pilot player in Dread Not. The Pilot, trapped within this enclosure, must manage multiple 
+        tasks including, but not limited to, steering the ship, guiding the Mechanic, and solving puzzles to keep the submarine afloat.   
+        <br><br>
+        When designing this space, it was important to consider the intention behind each area. As the primary artist assigned to the pilot 
+        room, I recognized that Dread Not is a high stakes game, and I wanted the player’s emotions and environment to reflect that while playing.
+        <br><br>
+        During initial concepting, I spent a great deal of time trying different layouts. With the main stress of the game tied to beating the 
+        clock, I wanted the player to understand the space quickly. So, I split the room into four corners, each with a distinct purpose. One 
+        corner is for navigation, another for puzzles, another for guiding the Mechanic, and the last for understanding critical submarine/game 
+        information. Breaking down one of these areas even further, each gameplay function is laid out to promote efficiency and ease of 
+        understanding. For example, the guidance side of the pilot room contains a map, CCTV cameras, and a dashboard of buttons. The Pilot 
+        looks at the cameras or map to see where the Mechanic is and relays critical information. If the Mechanic encounters a door, the Pilot 
+        will need to input the door number that the Mechanic relays back to them. By laying out the room this way, we are setting the Pilot and 
+        Mechanic up for success.  If a two-player team is going to fail, it should be because of their lack of communication or inattention towards 
+        the clock, not because they can’t understand the environment that they are set in.
+        <br><br>
+        When it came to modeling and texturing the space, I took extra care to stick to art fundamentals: composition, color theory, and lighting. 
+        Following these basic art principles can take a flat, bland environment and turn it into something that is, artistically, dynamic. An 
+        environment that the player can understand and feel connected to. Rounding off the thoughts of functionality from earlier, the room was 
+        separated to accommodate modularity. Everything was placed on a grid so that if I needed to add a new asset I would know, roughly, how 
+        large it would be before even starting the block out. Shape language was also crucial to breaking up the symmetry of the space.
+        <br>
+        <!-- IMAGE_PLACEHOLDER_3 -->
+        My favorite part of creating the pilot room was adding the individual props and imperfections within the models that made the submarine 
+        feel alive. I worked with our character team to portray a story of the Pilot. Sticky notes, cigarettes, photos, memorabilia, broken and 
+        empty bottles are a few of these personalized props that, when put together, help players understand the character that they are playing as. 
+        Duct tape, scattered tools, faulty wiring, rusty pipes, and outdated equipment emphasize the decaying state of the submarine, itself.
+        <br><br>
+        As an environment team, we made a conscious effort to spend extra time blending functionality with design. And, because of these efforts, 
+        we can create an environment that tells a story through immersion and an experience that, hopefully, players love.
+        `,
+        images: [
+            "BlogImages/Blog7/ryan-thiede-pilot-room-final-render-01.jpg",
+            "BlogImages/Blog7/ryan-thiede-pilot-room-final-render-02.jpg",
+            "BlogImages/Blog7/ryan-thiede-pilot-room-final-render-04.jpg"
+        ],
+        imageCaptions: [
+            "Pilot room in engine screenshot",
+            "Pilot room in engine screenshot",
+            "Pilot room in engine screenshot"
+        ]
     }
 };
 
