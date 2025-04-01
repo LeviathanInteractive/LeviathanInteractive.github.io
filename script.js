@@ -39,8 +39,8 @@ const blogPosts = {
             "BlogImages/Blog1/Sub_DesignPillars_EK.png"
         ],
         imageCaptions: [
-            "Dread Not main art.",
-            "The design pillars that guided our development."
+            "Dread Not in progress main posters and title art",
+            "Dread Not design pillars: “Asymmetric Cooperation,” “Communication,” “Controlled Chaos,” “Tension,” and “Duct-Tape Core,” meaning improvisational, not optimal"
         ]
     },
     2: {
@@ -85,6 +85,10 @@ const blogPosts = {
         images: [
             "BlogImages/Blog2/pilotroom.PNG",
             "BlogImages/Blog2/PropModels.png"
+        ],
+        imageCaptions: [
+            "Earliest concept art, made to visualize the aesthetics of the game",
+            "Some of the lighthearted props; the mug says, “#1 NON-MILITARY NUCLEAR SUBMARINE PILOT”"
         ]
     },
     3: {
@@ -117,6 +121,11 @@ const blogPosts = {
             "BlogImages/Blog3/Company_Logo.png",
             "BlogImages/Blog3/CharlieConcept.png",
             "BlogImages/Blog3/labConcept.png"
+        ],
+        imageCaptions: [
+            "Early Sienna Allure logo concept",
+            "Creature concept art (Charlie) by Ben Moon",
+            "Submarine lab concept art by Jon Wolfe"
         ]
     },
     4: {
@@ -154,6 +163,10 @@ const blogPosts = {
         images: [
             "BlogImages/Blog4/PhysicalPrototype_1.jpg",
             "BlogImages/Blog4/PhysicalProtypeAnswers.png"
+        ],
+        imageCaptions: [
+            "The Dread Not design team (Zach Adler, Gabe Anderson, Eleanor Berg, Graham Higdon, and Ryan Thiede) while they're hard at work",
+            "A few puzzle solutions and teammate Jacob Richardt midplaytest"
         ]
     },
     5: {
@@ -190,6 +203,10 @@ const blogPosts = {
         images: [
             "BlogImages/Blog5/image.png",
             "BlogImages/Blog5/image (1).png"
+        ],
+        imageCaptions: [
+            "Symbol puzzle prototype in engine",
+            "Wire puzzle prototype in engine"
         ]
     }
 };
