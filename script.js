@@ -325,6 +325,171 @@ const blogPosts = {
             "Pilot room in engine screenshot",
             "Pilot room in engine screenshot"
         ]
+    },
+    8: {
+        title: "Crafting Dread Not’s Connected Nightmare",
+        author: "Ben Rowan",
+        content: `<br> When we make video games, often it is one person interacting with one instance of an application. We go about our design process, 
+        ideate our mechanics, and begin to build our applications line by line in a very linear fashion knowing we only have one user. Sure, an application 
+        may utilize information from the web, upload data to a database, but even in those instances you have just one person making those calls. But what 
+        if we were to ask our application to handle two people in our application using our variables? Many software engineers will typically encounter a 
+        project/game that requires this level of thinking when their career has begun, however, when designing Dread Not, we were passionate and determined 
+        to learn how to overcome this hurdle to make our game.
+        <br><br>
+        The first hurdle that anyone encounters whilst making a game like this is finding a way to connect the players to the same game. When thinking about 
+        our choice of engine, this played a huge factor in deciding to roll with Unreal Engine 5. Unreal Engine has a large community of indie developers and 
+        independent teams that have tackled this problem and made solutions for others to take advantage of. For example, we are utilizing a plugin called 
+        Advanced Sessions and intend to later use its Steam version for public release. As seen below, there are several visual scripting nodes that allow 
+        us to achieve the goal of connecting two players in the same instance.
+        <br>
+        <!-- IMAGE_PLACEHOLDER_1 -->
+        •	Create Advanced Session <br>
+            o	Creating an advanced session allows us to create an instance that is joinable for another player. Furthermore, it allows us to customize 
+            properties of that session, like abstracting the session name, making it LAN, adjusting how many connections are possible, etc. <br>
+        •	Find Sessions Advanced <br>
+            o	Finding advanced sessions allows for someone’s game to detect whether there is a public or private instance of the game they could migrate 
+            to, effectively allowing them to find another joinable lobby. <br>
+        •	Get Session Settings <br>
+            o	Getting the session settings allows for us to fetch the custom settings, like password, session name, etc. and compare them to what the 
+            client has on their system. <br>
+        •	Join Session <br>
+            o	Join sessions finalizes the process by finally joining the session!
+        <br><br>
+        Now this is quite wonderful, really, however we have already run into our next roadblock... character selection. Now, instead of one person 
+        choosing which character they would like to play, you must consider that another person potentially wants to play the same character. So, 
+        what do you do? Well, our previous version looked a little like this...
+        <br>
+        <!-- IMAGE_PLACEHOLDER_2 -->
+        Holy moly this is messy! We will get more into the nitty gritty in a minute here, but essentially, this compares a variable attached to the 
+        player with what the game knows and then tells the server to display that that character is selected, as well as who has selected that character.
+        <br><br>
+        Once we move past character selection, we run into our game! Now let us think about a game mechanic – we are game designers after all. Take the 
+        popular video game The Forest developed by Endnight Games, which is a solo or cooperative survival experience set in... well... a forest... 
+        where you and your friends must fend off horrific creatures and find your son. The game allows you to harvest various materials. One of those 
+        materials is being able to chop down a tree and collect wood. Now when you are making a game for one person, this should be a no brainer in 
+        terms of making sure the player can see what is happening, but when we add another player, something odd happens. The tree will only fall for 
+        the host! So, we must implement something called replication for the client to see the tree fall as well. 
+        <br><br>
+        Replication is the core principle for developing a multiplayer game. It allows for information to be processed by the server and the client, 
+        allowing for both players to interact with the rules of your game. So, when we are developing puzzles and mechanics, we utilize Unreal Engine’s 
+        built in replication system for functions as seen below. 
+        <br>
+        <!-- IMAGE_PLACEHOLDER_3 -->
+        •	Execute on Owning Client <br>
+            o	This function will run on the client that interacts with this function. <br>
+        •	Execute on Server <br>
+            o	This function will only run on the server. <br>
+        •	Execute on All <br>
+            o	This function can only be called on the server, however, it casts down to all clients.
+        <br><br>
+        You can make various relationships with these function types to ensure that every rule you have set for your game can be interacted by both 
+        the host and the client!
+        <br><br>
+        Game dev is as cooperative as Dread Not is; your questions and suggestions are welcome via our email (click on the Contact tab at the top of
+        the page to reach us).
+        `,
+        images: [
+            "BlogImages/Blog8/Picture1.png",
+            "BlogImages/Blog8/Picture2.png",
+            "BlogImages/Blog8/Picture3.png"
+        ],
+        imageCaptions: [
+            "Blueprints for Networking",
+            "Blueprinting for Character Selection",
+            "Blueprints for Replication"
+        ]
+    },
+    9: {
+        title: "VR Prototyping: It Takes a Lot of Time to Pilot a Submarine",
+        author: "Nathan Morgan-Shimmin",
+        content: `<br> To fully inhabit the Pilot’s seat on the sub, we explored the idea of virtual reality for a more immersive experience. 
+        The Pilot is seated on a rolling swivel chair, which allows players with a smaller play space to partake in VR due to the limited range 
+        of motion required. Additionally, the objects the Pilot can interact with are much more fun to use with the tactile response of VR. This 
+        allows the Pilot to more fully immerse themselves within the game while they are awaiting a response from the Mechanic. However, there 
+        are costs with adding a VR option. Right now, everything is built around keyboard and mouse, as well as not just one, but two PC players, 
+        so a large portion of our networking and core systems would have to be refactored to be compatible with VR. This takes time.
+        <br>
+        <!-- IMAGE_PLACEHOLDER_1 -->
+        Unfortunately, that would be time we do not have to spare, and after much consideration, we have decided to not pursue virtual reality for 
+        our upcoming release. We have found that we would be able to provide a more complete experience by focusing our resources on just our PC build. 
+        Additionally, we have the time constraint of the Stout Game Expo for our initial launch, so we cannot devote as much time as we would need to 
+        refactor our code and to deal with the bugs that arise from adding that feature. Instead, VR has become a future stretch goal that we would love 
+        to implement in a possible post-release version of our game, as we still feel that it would add a lot to the player experience.
+        <br>
+        <!-- IMAGE_PLACEHOLDER_2 -->
+        `,
+        images: [
+            "BlogImages/Blog9/GrahamVRing.png",
+            "BlogImages/Blog9/EverythingGoingWrong.png"
+        ],
+        imageCaptions: [
+            "Teammate Graham in the process of researching VR and puzzles",
+            "What we fear would happen to our game if we added VR at deadline"
+        ]
+    },
+    10: {
+        title: "The Diving Helmet Decision",
+        author: "Eleanor Berg",
+        content: `<br> Designing the Mechanic was relatively straightforward. We chose this style of suit because it would completely obscure 
+        defining features like race or gender and allow the player to project themselves onto the model. The standard diving suit looks a certain 
+        way for practical reasons and there is little room for deviation, so when designing the character, my main goal was not to change the suit 
+        itself, but instead add details that reinforce our “duct-tape core” aesthetics. Some straps were left unbuckled, stickers and (of course) 
+        duct-tape were added, and the whole suit was beaten up and dirty. Color was the much harder step for me, and while going with a yellow 
+        suit would’ve been more realistic, many people said it would make the Mechanic look like a minion from Despicable Me. So, we went with blue, 
+        with yellow and metallic accents. Since the arms are the only part visible to the player embodying the Mechanic, and the Pilot can only see 
+        the Mechanic through a pixelated camera feed, only the hands needed to be incredibly detailed. However, for marketing purposes and for my 
+        own personal portfolio, I spent my own free time fleshing out the design and making the rest of the character detailed as well.
+        <br>
+        <!-- IMAGE_PLACEHOLDER_1 -->
+        <!-- IMAGE_PLACEHOLDER_2 -->
+        The Pilot was far trickier. We liked how the Mechanic’s anachronistic suit covered the head and allowed players to project themselves onto 
+        the character. However, it wouldn’t really make sense for the Pilot to wear a full suit. After some discussion with the team, we decided that 
+        it wouldn’t only be funny, but would also fit our game and solve our problem if the Pilot also, bizarrely, wore a helmet. We ran with this, 
+        making family photos with helmet-clad families and pinup posters with helmeted models. With the helmet covering the Pilot’s face, I also needed 
+        to cover the rest of their body and somehow add personality. I went with an office worker-esque outfit and gloves, along with some “duct-tape 
+        core” details. I also gave them a fancy pilot’s hat on top of the helmet.
+        <br>
+        <!-- IMAGE_PLACEHOLDER_3 -->
+        I modeled the Mechanic (and Pilot’s arms) using my typical modeling pipeline, which includes many different programs. This is the general outline: <br>
+        •	Model hard surface assets in Maya <br>
+        •	Import the visually important assets into ZBrush for a high poly version, which will be baked on later <br>
+        •	Design fabric assets using Marvelous Designer <br>
+            o	Adjust fit and add hardware/details of those assets in ZBrush if necessary <br>
+        •	Import sculpted assets into Maya and retopologize <br>
+        •	UV and sort the model <br>
+            o	Make an exploded version of the model and bake that in Substance Painter, along with the high poly versions where needed <br>
+        •	Import the finished low poly model into Painter and bake/add the normal maps from the exploded version <br>
+        •	Texture the model <br>
+        The model is then sent to the team’s animator for rigging and animating.
+        <br><br>
+        To bring a character from a simple concept sketch to a fully realized 3D figure is incredibly rewarding, though the process can be tedious, 
+        frustrating, and unforgiving at times. However, seeing the character come to life in the game makes it all worth it. Players will be able 
+        to inhabit these characters through gameplay, narrative, and through the life-sized photo-op cardboard cutouts at our game’s booth when we 
+        present our game.
+        <br>
+        <!-- IMAGE_PLACEHOLDER_4 -->
+        <!-- IMAGE_PLACEHOLDER_5 -->
+        <!-- IMAGE_PLACEHOLDER_6 -->
+        <!-- IMAGE_PLACEHOLDER_7 -->
+        `,
+        images: [
+            "BlogImages/Blog10/conceptsForPrint.png",
+            "BlogImages/Blog10/diverConcepts1.png",
+            "BlogImages/Blog10/conceptsForPrint (1).png",
+            "BlogImages/Blog10/NewLevelSequence._(7)0000.jpeg",
+            "BlogImages/Blog10/NewLevelSequence._(2)0000.png",
+            "BlogImages/Blog10/NewLevelSequence._(8)0000.jpeg",
+            "BlogImages/Blog10/NewLevelSequence._(5)0000.png"
+        ],
+        imageCaptions: [
+            "Mechanic concept art",
+            "Mechanic color concepts",
+            "Pilot concept art",
+            "the Mechanic",
+            "the Mechanic",
+            "the Mechanic",
+            "the Mechanic"
+        ]
     }
 };
 
