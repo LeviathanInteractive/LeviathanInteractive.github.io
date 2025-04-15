@@ -28,7 +28,8 @@ const blogPosts = {
         compatibility for the Pilot available for players who prefer a traditional platform, seeing as getting the game into as many hands as possible was another 
         team goal of ours. 
         <br> 
-        <br> 
+        <br>
+        <!-- VIDEO_PLACEHOLDER_1 -->
         Needless to say, with inspirations taken from real 1960’s Navy Nuclear Ballistic Missile submarines of the George Washington 
         Class combined with the 80's vibes found in cinematic classics such as The Hunt for Red October and Jaws, Dread Not is sure to be an absolute blast for players 
         of all ages. Will you sync or swim? 
@@ -41,6 +42,12 @@ const blogPosts = {
         imageCaptions: [
             "Dread Not in progress main posters and title art",
             "Dread Not design pillars: “Asymmetric Cooperation,” “Communication,” “Controlled Chaos,” “Tension,” and “Duct-Tape Core,” meaning improvisational, not optimal"
+        ],
+        videos: [
+            
+        ],
+        videoCaptions: [
+
         ]
     },
     2: {
@@ -519,6 +526,22 @@ function displayBlogContent(postId) {
             );
         });
     }
+    if (blogPost.videos && blogPost.videos.length > 0) {
+        blogPost.videos.forEach((video, index) => {
+            const caption = blogPost.videoCaptions ? blogPost.videoCaptions[index] : "";
+            formattedContent = formattedContent.replace(
+                `<!-- VIDEO_PLACEHOLDER_${index + 1} -->`,
+                `<div style="text-align:center; margin: 30px 0;">
+                    <video controls style="max-width:100%; display:block; margin:10px auto;">
+                        <source src="${video}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p style="font-style: italic; font-size: 14px; color: #666;">${caption}</p>
+                </div>`
+            );
+        });
+    }    
+  
 
     document.getElementById("blog-content-title").textContent = blogPost.title;
     /*document.getElementById("blog-content-body").innerHTML = `
