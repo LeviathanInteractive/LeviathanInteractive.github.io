@@ -497,6 +497,126 @@ const blogPosts = {
             "the Mechanic",
             "the Mechanic"
         ]
+    },
+    11: {
+        title: "The Diving Helmet Decision",
+        author: "Eleanor Berg",
+        content: `<br> Designing the Mechanic was relatively straightforward. We chose this style of suit because it would completely obscure 
+        defining features like race or gender and allow the player to project themselves onto the model. The standard diving suit looks a certain 
+        way for practical reasons and there is little room for deviation, so when designing the character, my main goal was not to change the suit 
+        itself, but instead add details that reinforce our “duct-tape core” aesthetics. Some straps were left unbuckled, stickers and (of course) 
+        duct-tape were added, and the whole suit was beaten up and dirty. Color was the much harder step for me, and while going with a yellow 
+        suit would’ve been more realistic, many people said it would make the Mechanic look like a minion from Despicable Me. So, we went with blue, 
+        with yellow and metallic accents. Since the arms are the only part visible to the player embodying the Mechanic, and the Pilot can only see 
+        the Mechanic through a pixelated camera feed, only the hands needed to be incredibly detailed. However, for marketing purposes and for my 
+        own personal portfolio, I spent my own free time fleshing out the design and making the rest of the character detailed as well.
+        <br>
+        <!-- IMAGE_PLACEHOLDER_1 -->
+        <!-- IMAGE_PLACEHOLDER_2 -->
+        The Pilot was far trickier. We liked how the Mechanic’s anachronistic suit covered the head and allowed players to project themselves onto 
+        the character. However, it wouldn’t really make sense for the Pilot to wear a full suit. After some discussion with the team, we decided that 
+        it wouldn’t only be funny, but would also fit our game and solve our problem if the Pilot also, bizarrely, wore a helmet. We ran with this, 
+        making family photos with helmet-clad families and pinup posters with helmeted models. With the helmet covering the Pilot’s face, I also needed 
+        to cover the rest of their body and somehow add personality. I went with an office worker-esque outfit and gloves, along with some “duct-tape 
+        core” details. I also gave them a fancy pilot’s hat on top of the helmet.
+        <br>
+        <!-- IMAGE_PLACEHOLDER_3 -->
+        I modeled the Mechanic (and Pilot’s arms) using my typical modeling pipeline, which includes many different programs. This is the general outline: <br>
+        •	Model hard surface assets in Maya <br>
+        •	Import the visually important assets into ZBrush for a high poly version, which will be baked on later <br>
+        •	Design fabric assets using Marvelous Designer <br>
+            o	Adjust fit and add hardware/details of those assets in ZBrush if necessary <br>
+        •	Import sculpted assets into Maya and retopologize <br>
+        •	UV and sort the model <br>
+            o	Make an exploded version of the model and bake that in Substance Painter, along with the high poly versions where needed <br>
+        •	Import the finished low poly model into Painter and bake/add the normal maps from the exploded version <br>
+        •	Texture the model <br>
+        The model is then sent to the team’s animator for rigging and animating.
+        <br><br>
+        To bring a character from a simple concept sketch to a fully realized 3D figure is incredibly rewarding, though the process can be tedious, 
+        frustrating, and unforgiving at times. However, seeing the character come to life in the game makes it all worth it. Players will be able 
+        to inhabit these characters through gameplay, narrative, and through the life-sized photo-op cardboard cutouts at our game’s booth when we 
+        present our game.
+        <br>
+        <!-- IMAGE_PLACEHOLDER_4 -->
+        <!-- IMAGE_PLACEHOLDER_5 -->
+        <!-- IMAGE_PLACEHOLDER_6 -->
+        <!-- IMAGE_PLACEHOLDER_7 -->
+        `,
+        images: [
+            "BlogImages/Blog10/conceptsForPrint.png",
+            "BlogImages/Blog10/diverConcepts1.png",
+            "BlogImages/Blog10/conceptsForPrint (1).png",
+            "BlogImages/Blog10/NewLevelSequence._(7)0000.jpeg",
+            "BlogImages/Blog10/NewLevelSequence._(2)0000.png",
+            "BlogImages/Blog10/NewLevelSequence._(8)0000.jpeg",
+            "BlogImages/Blog10/NewLevelSequence._(5)0000.png"
+        ],
+        imageCaptions: [
+            "Mechanic concept art",
+            "Mechanic color concepts",
+            "Pilot concept art",
+            "the Mechanic",
+            "the Mechanic",
+            "the Mechanic",
+            "the Mechanic"
+        ]
+    },
+    12: {
+        title: "AI Development: Bringing Charlie to Life",
+        author: "Victor Mondragon",
+        content: `<br> Dread Not is a game where two players need to work together to keep their submarine from falling apart. Sticking to the design pillar 
+        of “duct-tape core,” it makes sense that this submarine isn’t very strong to begin with. There’s no way the situation could get any worse, right? 
+        Well, when you throw a giant leviathan that’s constantly attacking your sub into the mix, I’d say that’s about the worst it can get.  
+        <br>
+        <!-- IMAGE_PLACEHOLDER_1 -->
+        Nicknamed Charlie, this monster is a threat that’s constantly looming over the engineers and keeping them on their toes. Throughout a playthrough, Charlie 
+        can be seen and heard by the player characters stalking the submarine, passing over it, and damaging it. Charlie’s presence brings a looming state of 
+        panic, fear, and dread as the players never know when he’ll strike, and whether or not said strike would be what ends their playthrough. Although he’s as 
+        terrifying as he is, you can’t help but experience a sense of awe when you see Charlie come to life in-game. This makes you wonder: how exactly does Charlie 
+        work and why does he work the way he does?  
+        <br><br>
+        <h3>BUILDING CHARLIE'S AI SYSTEM</h3>
+        When figuring out how to make Charlie work, we first had to figure out everything we wanted Charlie to do:<br><br>
+        •	Patrol/Stalk the submarine: Slowly patrol the sub, letting his presence be known to the players via sound queues or even being seen through one of the many windows.<br>
+        •	Pass the submarine: Get up close and personal with the sub by passing right next to or over it. This would be used to give the players a little scare and an up-close look at Charlie.<br>
+        •	Attack the submarine: The most terrifying task, Charlie can attack the submarine, giving the players more repairs to fix and shortening the amount of time they have to reach the surface.<br><br>
+        After discussion, we decided that there would be two main pieces that make up the AI System that allows Charlie to act the way he does. Those two pieces are the Charlie-AI and the Director-AI.
+        <br><br>
+        <h3>THE CHARLIE-AI</h3>
+        The Charlie-AI is a system that mainly relies on behavior trees. Behavior trees are a visual, organized way to develop AI for NPCs. They contain a series of tasks 
+        that an AI can perform and can be used to properly control the flow of decisions that the AI makes. This would be used to control and execute Charlie’s main tasks of 
+        patrolling, passing, and attacking. 
+        <!-- IMAGE_PLACEHOLDER_2 -->
+        As you can see, Charlie’s Behavior Tree is rather simple. It checks whether or not it’s ready to either attack or pass the submarine. If Charlie isn’t going to do either 
+        of the two, the entirety of the tree runs. It finds a point in an already set array of patrol points, moves to said point, and then increments the index of points so that 
+        he can move onto the next point without issue. It continues until Charlie is ready to either attack or pass by the submarine. Once Charlie reaches this state, the patrol 
+        task of the behavior tree is temporarily stopped, and Charlie’s AI instead executes the attack or pass task of the behavior tree.
+        <br><br>
+        <h3>THE DIRECTOR-AI</h3>
+        The Director-AI (or the Director) is an AI that adjusts the pacing and difficulty of the game dynamically. The Director is consistently keeping track of different variables 
+        that are present in the game, such as the number of damaged systems currently present, how much health the sub has left, the amount of time until reaching the surface, 
+        how often Charlie has been attacking, and more. The Director uses these variables in order to determine whether or not it should back off the players or throw more at them. 
+        If the players have a lot going on in the sub, then the Director will pull Charlie back and have him pass by more, rather than attack. Conversely, if the players’ situation 
+        is nothing but smooth sailing, it’ll make Charlie more aggressive and have him attack more. 
+        <!-- IMAGE_PLACEHOLDER_3 -->
+        These two pieces work together to make Charlie act the way he does, and it’s easy to expand upon these, as well. If we’d like to add more to Charlie’s patrolling, like having 
+        him take a different path on occasion or adjust the noises that he makes, we can add said changes to his behavior tree. If we’d like Charlie to have a new type of attack, like 
+        maybe one where he holds onto the ship and continuously does damage unless the players take appropriate action, we can add a new function to his Director-AI that occurs if it’s 
+        going too well for the players. These two pieces are rather flexible and are easy to expand upon, allowing us to continuously improve Charlie’s AI.
+        <br><br>
+        So... How have YOU been faring against Charlie? Did you manage to reach the surface and see the light of day again? Or did you get lost in the depths of the ocean? Let us know!
+        `,
+        images: [
+            "BlogImages/Blog12/Charlie_InGame.PNG",
+            "BlogImages/Blog12/Charlie_BehaviorTree.PNG",
+            "BlogImages/Blog12/Director_Code.PNG",
+        ],
+        imageCaptions: [
+            "Charlie stalking the sub in-game",
+            "Charlie's behavior tree",
+            "Portion of Director-AI code declarations"
+        ]
     }
 };
 
