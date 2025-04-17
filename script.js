@@ -351,16 +351,24 @@ const blogPosts = {
         <br>
         <!-- IMAGE_PLACEHOLDER_1 -->
         •	Create Advanced Session <br>
+        <!-- INDENT_START -->
             o	Creating an advanced session allows us to create an instance that is joinable for another player. Furthermore, it allows us to customize 
             properties of that session, like abstracting the session name, making it LAN, adjusting how many connections are possible, etc. <br>
+        <!-- INDENT_END -->
         •	Find Sessions Advanced <br>
+        <!-- INDENT_START -->
             o	Finding advanced sessions allows for someone’s game to detect whether there is a public or private instance of the game they could migrate 
             to, effectively allowing them to find another joinable lobby. <br>
+        <!-- INDENT_END -->
         •	Get Session Settings <br>
+        <!-- INDENT_START -->
             o	Getting the session settings allows for us to fetch the custom settings, like password, session name, etc. and compare them to what the 
             client has on their system. <br>
+        <!-- INDENT_END -->
         •	Join Session <br>
+        <!-- INDENT_START -->
             o	Join sessions finalizes the process by finally joining the session!
+        <!-- INDENT_END -->
         <br><br>
         Now this is quite wonderful, really, however we have already run into our next roadblock... character selection. Now, instead of one person 
         choosing which character they would like to play, you must consider that another person potentially wants to play the same character. So, 
@@ -383,11 +391,17 @@ const blogPosts = {
         <br>
         <!-- IMAGE_PLACEHOLDER_3 -->
         •	Execute on Owning Client <br>
+        <!-- INDENT_START -->
             o	This function will run on the client that interacts with this function. <br>
+        <!-- INDENT_END -->
         •	Execute on Server <br>
+        <!-- INDENT_START -->
             o	This function will only run on the server. <br>
+        <!-- INDENT_END -->
         •	Execute on All <br>
+        <!-- INDENT_START -->
             o	This function can only be called on the server, however, it casts down to all clients.
+        <!-- INDENT_END -->
         <br><br>
         You can make various relationships with these function types to ensure that every rule you have set for your game can be interacted by both 
         the host and the client!
@@ -461,10 +475,14 @@ const blogPosts = {
         •	Model hard surface assets in Maya <br>
         •	Import the visually important assets into ZBrush for a high poly version, which will be baked on later <br>
         •	Design fabric assets using Marvelous Designer <br>
-            o	Adjust fit and add hardware/details of those assets in ZBrush if necessary <br>
+        <!-- INDENT_START -->
+            o	Adjust fit and add hardware/details of those assets in ZBrush if necessary<br>
+        <!-- INDENT_END -->
         •	Import sculpted assets into Maya and retopologize <br>
         •	UV and sort the model <br>
+        <!-- INDENT_START -->
             o	Make an exploded version of the model and bake that in Substance Painter, along with the high poly versions where needed <br>
+        <!-- INDENT_END -->
         •	Import the finished low poly model into Painter and bake/add the normal maps from the exploded version <br>
         •	Texture the model <br>
         The model is then sent to the team’s animator for rigging and animating.
@@ -525,7 +543,7 @@ const blogPosts = {
         •	Model hard surface assets in Maya <br>
         •	Import the visually important assets into ZBrush for a high poly version, which will be baked on later <br>
         •	Design fabric assets using Marvelous Designer <br>
-            o	Adjust fit and add hardware/details of those assets in ZBrush if necessary <br>
+        o	Adjust fit and add hardware/details of those assets in ZBrush if necessary<br>
         •	Import sculpted assets into Maya and retopologize <br>
         •	UV and sort the model <br>
             o	Make an exploded version of the model and bake that in Substance Painter, along with the high poly versions where needed <br>
@@ -565,7 +583,7 @@ const blogPosts = {
     12: {
         title: "AI Development: Bringing Charlie to Life",
         author: "Victor Mondragon",
-        content: `<br> Dread Not is a game where two players need to work together to keep their submarine from falling apart. Sticking to the design pillar 
+        content: `<br> <i>Dread Not</i> is a game where two players need to work together to keep their submarine from falling apart. Sticking to the design pillar 
         of “duct-tape core,” it makes sense that this submarine isn’t very strong to begin with. There’s no way the situation could get any worse, right? 
         Well, when you throw a giant leviathan that’s constantly attacking your sub into the mix, I’d say that’s about the worst it can get.  
         <br>
@@ -581,7 +599,7 @@ const blogPosts = {
         •	Patrol/Stalk the submarine: Slowly patrol the sub, letting his presence be known to the players via sound queues or even being seen through one of the many windows.<br>
         •	Pass the submarine: Get up close and personal with the sub by passing right next to or over it. This would be used to give the players a little scare and an up-close look at Charlie.<br>
         •	Attack the submarine: The most terrifying task, Charlie can attack the submarine, giving the players more repairs to fix and shortening the amount of time they have to reach the surface.<br><br>
-        After discussion, we decided that there would be two main pieces that make up the AI System that allows Charlie to act the way he does. Those two pieces are the Charlie-AI and the Director-AI.
+        After discussion, we decided that there would be two main pieces that make up the AI System that allows Charlie to act the way he does. Those two pieces are the <b>Charlie-AI</b> and the <b>Director-AI</b>.
         <br><br>
         <h3>THE CHARLIE-AI</h3>
         The Charlie-AI is a system that mainly relies on behavior trees. Behavior trees are a visual, organized way to develop AI for NPCs. They contain a series of tasks 
@@ -619,6 +637,15 @@ const blogPosts = {
         ]
     }
 };
+
+function applyIndentationBlocks(content) {
+    return content.replace(
+        /<!-- INDENT_START -->([\s\S]*?)<!-- INDENT_END -->/g,
+        (_, innerContent) => {
+            return `<div style="margin-left: 40px;">${innerContent.trim()}</div>`;
+        }
+    );
+}
 
 // Function to display blog content
 function displayBlogContent(postId) {
@@ -661,6 +688,8 @@ function displayBlogContent(postId) {
             );
         });
     }    
+
+    formattedContent = applyIndentationBlocks(formattedContent);
   
 
     document.getElementById("blog-content-title").textContent = blogPost.title;
