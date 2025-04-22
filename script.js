@@ -517,67 +517,46 @@ const blogPosts = {
         ]
     },
     11: {
-        title: "The Diving Helmet Decision",
-        author: "Eleanor Berg",
-        content: `<br> Designing the Mechanic was relatively straightforward. We chose this style of suit because it would completely obscure 
-        defining features like race or gender and allow the player to project themselves onto the model. The standard diving suit looks a certain 
-        way for practical reasons and there is little room for deviation, so when designing the character, my main goal was not to change the suit 
-        itself, but instead add details that reinforce our “duct-tape core” aesthetics. Some straps were left unbuckled, stickers and (of course) 
-        duct-tape were added, and the whole suit was beaten up and dirty. Color was the much harder step for me, and while going with a yellow 
-        suit would’ve been more realistic, many people said it would make the Mechanic look like a minion from Despicable Me. So, we went with blue, 
-        with yellow and metallic accents. Since the arms are the only part visible to the player embodying the Mechanic, and the Pilot can only see 
-        the Mechanic through a pixelated camera feed, only the hands needed to be incredibly detailed. However, for marketing purposes and for my 
-        own personal portfolio, I spent my own free time fleshing out the design and making the rest of the character detailed as well.
+        title: "The Frankenstein Monster of Dread Not",
+        author: "Ben Moon",
+        content: `<br> The grand purpose of the main sea creature is to provide an antagonistic role opposite the players and give a sense of unease as 
+        the players get glimpses of the beast in short bursts. Compared to the standard fish and the nautical life found around it, it is meant to feel 
+        almost alien. These aspects come together to form an immersive underwater environment that will bring players closer to the Dread Not experience.
+        <br><br>
+        For the initial stages of the game development process, I created a list of creatures and fish that we would want to see in the game. The first 
+        question posed was whether the creatures should be based in reality or if they should be entirely alien in concept. During early ideation, there 
+        was the idea of the game taking place in a wormhole or alternate dimension that the sub sailed into. In the end, we decided that the main creature 
+        hunting the player should be the only ‘unrealistic’ one in the game. Several early drafts for the creature exist, but most of them were based on 
+        large fish both modern and prehistoric. During the concept art phase, I studied and concepted through worm-like, bug-like, and piranha-like designs, 
+        but eventually decided to stay true to the whale-like roots for the body with some further inspiration from deep sea creatures like gulper eels and 
+        prehistoric fish like the mosasaurus. The very first ideation of the monster was a massive whale creature that had eldritch aspects, such as multiple 
+        eyes and visible veins. Eventually, this design was altered to include more prehistoric and shark-like aspects to maintain the horror factor and add 
+        more realism.
         <br>
         <!-- IMAGE_PLACEHOLDER_1 -->
         <!-- IMAGE_PLACEHOLDER_2 -->
-        The Pilot was far trickier. We liked how the Mechanic’s anachronistic suit covered the head and allowed players to project themselves onto 
-        the character. However, it wouldn’t really make sense for the Pilot to wear a full suit. After some discussion with the team, we decided that 
-        it wouldn’t only be funny, but would also fit our game and solve our problem if the Pilot also, bizarrely, wore a helmet. We ran with this, 
-        making family photos with helmet-clad families and pinup posters with helmeted models. With the helmet covering the Pilot’s face, I also needed 
-        to cover the rest of their body and somehow add personality. I went with an office worker-esque outfit and gloves, along with some “duct-tape 
-        core” details. I also gave them a fancy pilot’s hat on top of the helmet.
+        Now that the basic framework for the creature was done, it was time to go into further details and add a bit of a story to the design. The team decided 
+        that this beast would be a very old fish that was likely a survivor from the time when prehistoric beasts would swim around, such as the mosasaurus they 
+        were based on. On top of this, they would be a deep sea creature, so I decided to give the beast very hollow dead eyes, to help add some eeriness to the 
+        design, as well as convey that it lived in an area where vision wasn’t nearly as much of a necessity. As for the ancient aspect, I decided to make the 
+        skin tone very dull and leathery, to imply that age had taken away much of the color. Adding barnacles and faded scars across the body implied that this 
+        creature was a dominant and violent force years ago and has since  been slowed down by age. The final design is meant to give the feeling of an ancient 
+        force of power reawakened to hunt once again. 
         <br>
         <!-- IMAGE_PLACEHOLDER_3 -->
-        I modeled the Mechanic (and Pilot’s arms) using my typical modeling pipeline, which includes many different programs. This is the general outline: <br>
-        •	Model hard surface assets in Maya <br>
-        •	Import the visually important assets into ZBrush for a high poly version, which will be baked on later <br>
-        •	Design fabric assets using Marvelous Designer <br>
-        o	Adjust fit and add hardware/details of those assets in ZBrush if necessary<br>
-        •	Import sculpted assets into Maya and retopologize <br>
-        •	UV and sort the model <br>
-            o	Make an exploded version of the model and bake that in Substance Painter, along with the high poly versions where needed <br>
-        •	Import the finished low poly model into Painter and bake/add the normal maps from the exploded version <br>
-        •	Texture the model <br>
-        The model is then sent to the team’s animator for rigging and animating.
-        <br><br>
-        To bring a character from a simple concept sketch to a fully realized 3D figure is incredibly rewarding, though the process can be tedious, 
-        frustrating, and unforgiving at times. However, seeing the character come to life in the game makes it all worth it. Players will be able 
-        to inhabit these characters through gameplay, narrative, and through the life-sized photo-op cardboard cutouts at our game’s booth when we 
-        present our game.
-        <br>
-        <!-- IMAGE_PLACEHOLDER_4 -->
-        <!-- IMAGE_PLACEHOLDER_5 -->
-        <!-- IMAGE_PLACEHOLDER_6 -->
-        <!-- IMAGE_PLACEHOLDER_7 -->
+        According to the game’s lore, the creature is considered to be the third individual of importance to the mission. Seeing as Alpha and Bravo are the Pilot 
+        and Mechanic, the beast was given the simple name of Charlie. Outside of the game, however, it was just a funny name we all came up with and with its use 
+        overtime, it simply stuck.
         `,
         images: [
-            "BlogImages/Blog10/conceptsForPrint.png",
-            "BlogImages/Blog10/diverConcepts1.png",
-            "BlogImages/Blog10/conceptsForPrint (1).png",
-            "BlogImages/Blog10/NewLevelSequence._(7)0000.jpeg",
-            "BlogImages/Blog10/NewLevelSequence._(2)0000.png",
-            "BlogImages/Blog10/NewLevelSequence._(8)0000.jpeg",
-            "BlogImages/Blog10/NewLevelSequence._(5)0000.png"
+            "BlogImages/Blog11/Monster Whale Concepts.jpg",
+            "BlogImages/Blog11/CharlieConcept.png",
+            "BlogImages/Blog11/image (1).png"
         ],
         imageCaptions: [
-            "Mechanic concept art",
-            "Mechanic color concepts",
-            "Pilot concept art",
-            "the Mechanic",
-            "the Mechanic",
-            "the Mechanic",
-            "the Mechanic"
+            "Early concept art for the creature",
+            "Final creature concept art",
+            "Charlie, the Creature"
         ]
     },
     12: {
