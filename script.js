@@ -18,8 +18,7 @@ const blogPosts = {
         other rooms and must repair systems under the Pilot's guidance. This game is all about communication and cooperation. In a world that’s increasingly 
         connected, inspiring people to reach out and work with each other is great motivation for our team. We believe that by creating a game that not only 
         brings people together, but literally requires two to play, we can gradually make the world a better and more entertaining place. 
-        <br>
-        <br> 
+        <br><br> 
         Generating a fun, yet semi-chaotic atmosphere for players that allows them to really feel the tension of the situation was also key to the idea of this game, and what better way 
         to do that than have both players be in completely different roles with simple, yet interconnected tasks. This is what led our team to implement both PC and 
         VR; we wanted to enhance that asymmetric experience by having two distinct modes of immersion and additionally add another layer of interactivity to the 
@@ -27,9 +26,7 @@ const blogPosts = {
         actually there helps intensify and incorporate action into an experience that otherwise doesn’t provide much space to explore. However, there is still PC 
         compatibility for the Pilot available for players who prefer a traditional platform, seeing as getting the game into as many hands as possible was another 
         team goal of ours. 
-        <br> 
-        <br>
-        <!-- VIDEO_PLACEHOLDER_1 -->
+        <br><br>
         Needless to say, with inspirations taken from real 1960’s Navy Nuclear Ballistic Missile submarines of the George Washington 
         Class combined with the 80's vibes found in cinematic classics such as The Hunt for Red October and Jaws, Dread Not is sure to be an absolute blast for players 
         of all ages. Will you sync or swim? 
@@ -42,12 +39,6 @@ const blogPosts = {
         imageCaptions: [
             "Dread Not in progress main posters and title art",
             "Dread Not design pillars: “Asymmetric Cooperation,” “Communication,” “Controlled Chaos,” “Tension,” and “Duct-Tape Core,” meaning improvisational, not optimal"
-        ],
-        videos: [
-            
-        ],
-        videoCaptions: [
-
         ]
     },
     2: {
@@ -613,6 +604,63 @@ const blogPosts = {
             "Charlie stalking the sub in-game",
             "Charlie's behavior tree",
             "Portion of Director-AI code declarations"
+        ]
+    },
+    13: {
+        title: "Adding Movement to the Mayhem",
+        author: "Gabe Anderson and Ben Moon",
+        content: `<br> When you think of animation, I bet you think of your favorite Disney movie or Saturday morning cartoon. Animation isn’t limited 
+        to feature-length films and your family room TV; it is everywhere, even when it isn’t the focus. Video games need animation to enhance immersion 
+        and to keep gameplay fluid. Good animation should feel completely natural, almost to the point that you never even notice it. Dread Not is unique 
+        in that only one of our player characters, the Mechanic, will need animation. We incorporated a camera system that the Pilot can use to see where 
+        the Mechanic is in the submarine. The Pilot is never seen by either player. Some animation is more for fun than anything else. Our game focuses 
+        heavily on the players communicating with each other, so adding a waving animation for the Mechanic to use is a cool way to encourage player 
+        interaction.
+        <br><br>
+        How is it all done? First, we start with a 3D mesh of the character and use joints to create a skeleton. This skeleton will then be used as points 
+        of movement in the character, so it’ll end up looking relatively close to a real human skeleton with joints in all the same places we have, plus a 
+        few extras for anything else attached to body. In our case, we need an extra joint for the air tanks placed on the Mechanic’s back and a chain of 
+        joints to allow the tube to connect the tanks to the helmet to stretch. Next, we create controllers to move each of the joints we animate. Finally, 
+        we can apply the joints to the character mesh via something called skin weights. Skin weights bind the skin to the joints so that when the joints move, 
+        so does the mesh. Voila! You can now animate the character. The animation itself uses a graph system and timeline to calculate movements between 
+        keyframes set by the animator. This graph can be edited to perfect animations.
+        <br>
+        <!-- IMAGE_PLACEHOLDER_1 -->
+        <!-- VIDEO_PLACEHOLDER_1 -->
+        Also rich with movement is the aquatic life that surrounds the submarine. These creatures provide a frame of reference for the player and help establish 
+        the relative stress of their current situation in a manner different than the claustrophobic level design. For the smaller fish, the primary source of 
+        animation comes from utilizing the Niagara tools in Unreal Engine 5 to turn small 3D models and 2D images into particles that can be manipulated and 
+        shifted around the submarine. This allows for swarms of smaller fish to swim past windows without limiting the framerate or quality of the game. Larger 
+        fish have simple scripted patterns to have special designated call signs much like an actor on a stage. Some of them are meant to signal to the player 
+        that they have reached certain depths, while others are intended to be quick jokes that the player may not even notice if they aren’t paying attention.
+        <br>
+        <!-- IMAGE_PLACEHOLDER_2 -->
+        Arguably more important than all the surrounding life is that of the primary antagonist, Charlie. He is the only character that both players can see with 
+        their own eyes, and as such, they need to believe that this is a creature that is truly alive and posing a threat to them. Despite this, most of Charlie’s 
+        movements follow a staged set of pre-animated scenes and motions that are scripted to play during certain events. Crashing into the ship, staring at the 
+        Pilot, swimming through the dark, and illuminating the ship are some of these moments that are constructed beforehand so that they can be implemented in a 
+        specific way to help flesh out the experience. Aside from this, Charlie is set to have basic animations for swimming around that the player may see in the 
+        distance to know that they are under constant threat. These animations are meant to mimic the bodily movements of whales and sharks, while general mouth 
+        movements are based on those of gulper eels and basking sharks. These animations come together to bring a monster to life that’ll amp up the tension for 
+        any players.
+        <br>
+        <!-- VIDEO_PLACEHOLDER_2 -->
+        `,
+        images: [
+            "BlogImages/Blog13/Mechanic_Rig.png",
+            "BlogImages/Blog13/Clarence.jpg"
+        ],
+        imageCaptions: [
+            "Mechanic animation rig",
+            "Model of Clarence, a sunfish"
+        ],
+        videos: [
+            "BlogImages/Blog13/Mechanic_Idle.mp4",
+            "BlogImages/Blog13/2025-04-22 10-54-24 1.mp4"
+        ],
+        videoCaptions: [
+            "Mechanic idle animation",
+            "Charlie's idle animation"
         ]
     }
 };
