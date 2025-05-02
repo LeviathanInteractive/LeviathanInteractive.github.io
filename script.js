@@ -3,14 +3,15 @@ const blogPosts = {
     1: {
         title: "Why We're Making Dread Not",
         author: "Sarah Ziebarth",
-        content: `<br> The water is dark and incredibly cold. The pressure is intense, and the stakes couldn’t be higher... <br> <br> 
+        content: `<br> <i>The water is dark and incredibly cold. The pressure is intense, and the stakes couldn’t be higher...</i> 
+        <br><br> 
         After being attacked by a colossal sea creature, a small nuclear submarine outfitted for research is thrown into a high-stakes 
         battle and must reach the surface before air runs out. Players take on the role of either the Pilot or the Mechanic and must work 
         together to keep the submarine stable by communicating with each other, fixing failing systems, and navigating through perilous waters. 
         Survival depends on the pair’s ability to work together under immense pressure. Failure is not an option.
         <br> 
         <!-- IMAGE_PLACEHOLDER_1 -->
-        Dread Not is a virtual reality/PC asymmetric co-op game created by Leviathan Interactive, a studio comprised of 15 UW-Stout students, whose mission is to unite people 
+        <i>Dread Not</i> is a virtual reality/PC asymmetric co-op game created by Leviathan Interactive, a studio comprised of 15 UW-Stout students, whose mission is to unite people 
         through games! You play as a pair of marine researchers aboard a doomed vessel that has suffered severe damage and only has 10 minutes before running out of oxygen. 
         Your only chance of reaching the surface is by making emergency repairs, which are completed through cooperative and individual puzzles scattered throughout the 
         system rooms of the submarine. The Pilot, who can be played on either PC or in VR, is constrained to a single room where they control navigation and relay 
@@ -28,7 +29,7 @@ const blogPosts = {
         team goal of ours. 
         <br><br>
         Needless to say, with inspirations taken from real 1960’s Navy Nuclear Ballistic Missile submarines of the George Washington 
-        Class combined with the 80's vibes found in cinematic classics such as The Hunt for Red October and Jaws, Dread Not is sure to be an absolute blast for players 
+        Class combined with the 80's vibes found in cinematic classics such as <i>The Hunt for Red October</i> and <i>Jaws</i>, <i>Dread Not</i> is sure to be an absolute blast for players 
         of all ages. Will you sync or swim? 
         <br>
         <!-- IMAGE_PLACEHOLDER_2 -->`,
@@ -59,7 +60,7 @@ const blogPosts = {
         in the kitchen. The Mechanic can’t understand the Pilot’s directions. The Pilot can’t nderstand the submarine’s user 
         manual. If they don’t communicate efficiently and work together, they will both die, and probably also get fired.
         <br><br>
-        Despite the inherent horror the open ocean provides, Dread Not is not meant to be a dark and serious game. 
+        Despite the inherent horror the open ocean provides, <i>Dread Not</i> is not meant to be a dark and serious game. 
         We want panic, we want some fear, but communication between the two players is the main priority. What is 
         needed is some lightheartedness and humor to encourage the players to interact and fight playfully with 
         each other. We wanted to make the world around the ship dark yet sublimely beautiful in addition to having 
@@ -109,7 +110,7 @@ const blogPosts = {
         with your intrusion on his turf. 
         <br>
         <!-- IMAGE_PLACEHOLDER_2 -->
-        The narrative in Dread Not is driven primarily by captivating environments and immersive audio. We incorporate dynamic 
+        The narrative in <i>Dread Not</i> is driven primarily by captivating environments and immersive audio. We incorporate dynamic 
         lighting affected by the environment and creatures, decals and logos plastered on the walls and equipment, 
         in addition with incredible 80’s themed music to bring it all to life. While your employers may not have your 
         well-being in mind, the automated voice onboard certainly does, though it may not always be too helpful. All the 
@@ -129,7 +130,7 @@ const blogPosts = {
     4: {
         title: "Designing the Physical Prototype",
         author: "Graham Higdon",
-        content: `<br> Dread Not is a two-player co-op game wherein players work together to repair their submarine and 
+        content: `<br> <i>Dread Not</i> is a two-player co-op game wherein players work together to repair their submarine and 
         surface before catastrophe strikes. “So, how do you repair the sub?” you ask. Well, that depends on how well 
         you get along with your partner. The Pilot is trapped in the navigation room, along with all the solutions and 
         manuals to fix any issues going on in the sub, and the Mechanic is the only other crew member. The Mechanic 
@@ -211,7 +212,7 @@ const blogPosts = {
         title: "The Submarine as Seen by the Mechanic",
         author: "Samuel Lambert and Zach Adler",
         content: `<br> Level design truly makes or breaks the flow and nature of one's game through the use of floor plans, 
-        lighting, and ease of access to players. Dread Not uses the realistic environment of a submarine and gamifies it in order 
+        lighting, and ease of access to players. <i>Dread Not</i> uses the realistic environment of a submarine and gamifies it in order 
         to make the game easy to understand while holding true to the “duct-tape core” (meaning improvisational or not optimal) 
         design pillar of our game.   
         <br>
@@ -243,13 +244,13 @@ const blogPosts = {
         for, which again emphasizes the concepts of improvisation and haphazardness demonstrated by the overarching narrative.
         <br>
         <!-- IMAGE_PLACEHOLDER_7 -->
-        The rooms thus far explained in Dread Not have crucial roles for a successful submarine research expedition. However, the lab room 
+        The rooms thus far explained in <i>Dread Not</i> have crucial roles for a successful submarine research expedition. However, the lab room 
         holding a specimen inside a glass tank gives credence to why our Mechanic and Pilot are on such a mission. Exploring this narrative 
         driven area hints at what they may be after, but the danger lurking in the surrounding waters is what will alarm players into an 
         urgent state of play.
         <br>
         <!-- IMAGE_PLACEHOLDER_8 -->
-        Dread Not’s consideration of unique level design to refit a military submarine into a research vessel allows the concept to stay 
+        <i>Dread Not</i>’s consideration of unique level design to refit a military submarine into a research vessel allows the concept to stay 
         true to the “duct-tape core” gameplay it offers while still being friendly to players. Additionally, creating a visually aesthetic 
         layout that’s full of complimentary visual storytelling allows players to immerse themselves more fully into our narrative and 
         gameplay simply by navigating the environment. Gamers, be ready to explore as the Mechanic, guide as the Pilot, and try not to 
@@ -282,11 +283,11 @@ const blogPosts = {
         content: `
         <!-- IMAGE_PLACEHOLDER_1 -->
         <!-- IMAGE_PLACEHOLDER_2 -->
-        The pilot room is the main space for the Pilot player in Dread Not. The Pilot, trapped within this enclosure, must manage multiple 
+        The pilot room is the main space for the Pilot player in <i>Dread Not</i>. The Pilot, trapped within this enclosure, must manage multiple 
         tasks including, but not limited to, steering the ship, guiding the Mechanic, and solving puzzles to keep the submarine afloat.   
         <br><br>
         When designing this space, it was important to consider the intention behind each area. As the primary artist assigned to the pilot 
-        room, I recognized that Dread Not is a high stakes game, and I wanted the player’s emotions and environment to reflect that while playing.
+        room, I recognized that <i>Dread Not</i> is a high stakes game, and I wanted the player’s emotions and environment to reflect that while playing.
         <br><br>
         During initial concepting, I spent a great deal of time trying different layouts. With the main stress of the game tied to beating the 
         clock, I wanted the player to understand the space quickly. So, I split the room into four corners, each with a distinct purpose. One 
@@ -331,7 +332,7 @@ const blogPosts = {
         ideate our mechanics, and begin to build our applications line by line in a very linear fashion knowing we only have one user. Sure, an application 
         may utilize information from the web, upload data to a database, but even in those instances you have just one person making those calls. But what 
         if we were to ask our application to handle two people in our application using our variables? Many software engineers will typically encounter a 
-        project/game that requires this level of thinking when their career has begun, however, when designing Dread Not, we were passionate and determined 
+        project/game that requires this level of thinking when their career has begun, however, when designing <i>Dread Not</i>, we were passionate and determined 
         to learn how to overcome this hurdle to make our game.
         <br><br>
         The first hurdle that anyone encounters whilst making a game like this is finding a way to connect the players to the same game. When thinking about 
@@ -397,7 +398,7 @@ const blogPosts = {
         You can make various relationships with these function types to ensure that every rule you have set for your game can be interacted by both 
         the host and the client!
         <br><br>
-        Game dev is as cooperative as Dread Not is; your questions and suggestions are welcome via our email (click on the Contact tab at the top of
+        Game dev is as cooperative as <i>Dread Not</i> is; your questions and suggestions are welcome via our email (click on the Contact tab at the top of
         the page to reach us).
         `,
         images: [
@@ -512,7 +513,7 @@ const blogPosts = {
         author: "Ben Moon",
         content: `<br> The grand purpose of the main sea creature is to provide an antagonistic role opposite the players and give a sense of unease as 
         the players get glimpses of the beast in short bursts. Compared to the standard fish and the nautical life found around it, it is meant to feel 
-        almost alien. These aspects come together to form an immersive underwater environment that will bring players closer to the Dread Not experience.
+        almost alien. These aspects come together to form an immersive underwater environment that will bring players closer to the <i>Dread Not</i> experience.
         <br><br>
         For the initial stages of the game development process, I created a list of creatures and fish that we would want to see in the game. The first 
         question posed was whether the creatures should be based in reality or if they should be entirely alien in concept. During early ideation, there 
@@ -611,7 +612,7 @@ const blogPosts = {
         author: "Gabe Anderson and Ben Moon",
         content: `<br> When you think of animation, I bet you think of your favorite Disney movie or Saturday morning cartoon. Animation isn’t limited 
         to feature-length films and your family room TV; it is everywhere, even when it isn’t the focus. Video games need animation to enhance immersion 
-        and to keep gameplay fluid. Good animation should feel completely natural, almost to the point that you never even notice it. Dread Not is unique 
+        and to keep gameplay fluid. Good animation should feel completely natural, almost to the point that you never even notice it. <i>Dread Not</i> is unique 
         in that only one of our player characters, the Mechanic, will need animation. We incorporated a camera system that the Pilot can use to see where 
         the Mechanic is in the submarine. The Pilot is never seen by either player. Some animation is more for fun than anything else. Our game focuses 
         heavily on the players communicating with each other, so adding a waving animation for the Mechanic to use is a cool way to encourage player 
@@ -661,6 +662,113 @@ const blogPosts = {
         videoCaptions: [
             "Mechanic idle animation",
             "Charlie's idle animation"
+        ]
+    },
+    14: {
+        title: "Reporting to You: Behind the Media",
+        author: "Elaine Kelling",
+        content: `<br> Our first step in marketing was gaining your interest – and now we have it!
+        <br><br>
+        We posted our trailer and saw the uptick in views immediately. From there, we started to share our blogs and some of our art! We came to you with some 
+        of our best work to show off the game rooms, characters, and our beloved Charlie. We’ve even posted our in-progress work, so you could follow along with 
+        our process as it happened.
+        <br>
+        <!-- IMAGE_PLACEHOLDER_1 -->
+        We wanted it to reach you at your best of times, so we posted primarily during your morning coffee breaks and evening phone scrolls! Our strategy started 
+        with our audience as a part of our crew, and we’re going to keep it going.
+        <br><br>
+        When planning out our posting schedule, we wanted to be consistent and unique in the content we showed to our audience.  Leading up to Stout Game Expo, we 
+        are showing off different areas of our game to get you excited – and that we’re proud to show!
+        <br>
+        <!-- IMAGE_PLACEHOLDER_2 -->
+        At the Stout Game Expo, you’ll have the chance to drop by our booth. We’ll have dividers between players to give you that submarine feeling as you play at 
+        the event! We’ll also have tricky puzzle sheets and character cutouts for you to take your picture with as you wait for your chance to play. Before you leave 
+        the booth, make sure to snag some of our merch including our stickers and patches.
+        <br><br>
+        We’re going to continue giving you updates on our progress even as our blogs become less frequent – stayed tuned to our Instagram! We’ll also keep an updated 
+        view of our gallery here on our official website so you can see any new contributions and assets. Our game will remain up on itch and is coming soon to Steam 
+        for all to enjoy!
+        <br>
+        <!-- IMAGE_PLACEHOLDER_3 -->
+        <!-- IMAGE_PLACEHOLDER_4 -->
+        `,
+        images: [
+            "BlogImages/Blog14/trailerpost.png",
+            "BlogImages/Blog14/schedule.png",
+            "BlogImages/Blog14/characterpost.png",
+            "BlogImages/Blog14/charliepost.png"
+        ],
+        imageCaptions: [
+            "Instagram post on the Dread Not process trailer",
+            "Social media schedule",
+            "Instagram post on characters",
+            "Instagram post on the creature, Charlie"
+        ]
+    },
+    15: {
+        title: "Making Underwater Magic: Realistic Fish and Caustic Lighting",
+        author: "Zach Adler and Sarah Ziebarth",
+        content: `
+        <!-- IMAGE_PLACEHOLDER_1 -->
+        When it comes to creating immersive game worlds, it’s the small details that breathe life into the environment. In our latest update, we’re taking a deep dive
+         (pun intended) into two examples of the visual effects (VFX) that occur beyond the hull of the submarine in <i>Dread Not</i>. We’ll start first with something that’s 
+         both visually stunning and surprisingly complex: realistic swimming fish!
+         <br><br>
+         We simulate the behavior of real fish — the way they group together and change direction in a fluid, natural motion. Using 3D models, textures, and basic animations. 
+         Think less “background decoration,” and more “living ecosystem.”
+        <br> 
+        <!-- IMAGE_PLACEHOLDER_2 -->
+        <!-- IMAGE_PLACEHOLDER_3 -->
+        Niagara, Unreal Engine’s powerful VFX system, gave us the tools we needed to accomplish this. We started by creating a custom particle emitter for the fish. Creating 
+        this float emitter allows for custom particles, in our case, fish, to follow a path, resulting in a true to life resemblance of a school in the outside environment. 
+        <br>
+        <!-- IMAGE_PLACEHOLDER_4 -->
+        <!-- IMAGE_PLACEHOLDER_5 -->
+        <!-- VIDEO_PLACEHOLDER_1 -->
+        As for the second visual effect, a beautiful underwater scene isn’t complete without the hypnotic dance of light across the ocean floor. Those shimmering, rippling 
+        patterns are known as caustics, and more specifically, they are the patterns of light created when sunlight bends and focuses through the surface of water. You’ve 
+        probably seen them in pools or shallow areas of the ocean — they shift constantly with the waves, and they’re an essential part of making an underwater environment 
+        feel right. 
+        <br><br>
+        To fit this aesthetic in our game, we implemented a dynamic underwater caustic lighting system that creates this same effect in Unreal Engine to complement our 
+        Niagara-driven swimming fish. This was done by creating a custom shader that takes a texture, layers this a couple times on top of itself, then gradually pans these 
+        layers in different directions over time so they appear to move. Another variable adds a slight distortion to each layer that appears like a gentle rippling across 
+        the design, which elevates the shader to another level of realism both because it more accurately represents the movement of waves and keeps each layer of the texture 
+        from looking the same. Lastly, this shader is applied as a light function to either a directional light or individual spotlights within the scene that we can then place 
+        wherever we wish the effect to show!
+        <br>
+        <!-- IMAGE_PLACEHOLDER_6 -->
+        Paying close attention to such subtle, but powerful details as the realistic movement of schools of fish or caustic lights streaming through the window of a submarine 
+        are what make an interactive game environment even more magical for players to immerse themselves in. Even though neither are intrinsic to the mechanics of the game, 
+        we at Leviathan Interactive believe that their absence would be more noticeable than most other features within <i>Dread Not</i>. So, next time players get the chance, we hope 
+        they’ll glance out a window to see the passing fish while running frantically down a hallway, or even just stare hopelessly at the floor of the pilot’s room, where the 
+        sunbeams from above will surely be rippling in time with the waves.
+        <br>
+        <!-- VIDEO_PLACEHOLDER_2 -->
+        `,
+        images: [
+            "BlogImages/Blog15/FIshCLoseup.PNG",
+            "BlogImages/Blog15/Fish1.PNG",
+            "BlogImages/Blog15/Fish2.PNG",
+            "BlogImages/Blog15/Particle UE System.PNG",
+            "BlogImages/Blog15/FishHole.PNG",
+            "BlogImages/Blog15/CausticBP.png"
+        ],
+        imageCaptions: [
+            "Fish particle test in engine",
+            "Fish model version one",
+            "Fish model version two",
+            "In game view looking out a porthole",
+            "Blueprints for generating fish particles",
+            "Blueprints for generating caustic lighting"
+        ],
+        videos: [
+            "BlogImages/Blog15/FishVideoNS.mp4",
+            "BlogImages/Blog15/Caustics.mp4"
+        ],
+        videoCaptions: [
+            "In engine fish particle test",
+            "In game caustic lighting"
         ]
     }
 };
