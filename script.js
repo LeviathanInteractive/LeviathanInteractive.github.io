@@ -711,11 +711,11 @@ const blogPosts = {
         content: `
         <!-- IMAGE_PLACEHOLDER_1 -->
         When it comes to creating immersive game worlds, it’s the small details that breathe life into the environment. In our latest update, we’re taking a deep dive
-         (pun intended) into two examples of the visual effects (VFX) that occur beyond the hull of the submarine in <i>Dread Not</i>. We’ll start first with something that’s 
-         both visually stunning and surprisingly complex: realistic swimming fish!
-         <br><br>
-         We simulate the behavior of real fish — the way they group together and change direction in a fluid, natural motion. Using 3D models, textures, and basic animations. 
-         Think less “background decoration,” and more “living ecosystem.”
+        (pun intended) into two examples of the visual effects (VFX) that occur beyond the hull of the submarine in <i>Dread Not</i>. We’ll start first with something that’s 
+        both visually stunning and surprisingly complex: realistic swimming fish!
+        <br><br>
+        We simulate the behavior of real fish — the way they group together and change direction in a fluid, natural motion. Using 3D models, textures, and basic animations. 
+        Think less “background decoration,” and more “living ecosystem.”
         <br> 
         <!-- IMAGE_PLACEHOLDER_2 -->
         <!-- IMAGE_PLACEHOLDER_3 -->
@@ -769,6 +769,214 @@ const blogPosts = {
         videoCaptions: [
             "In engine fish particle test",
             "In game caustic lighting"
+        ]
+    },
+    16: {
+        title: "Proper Prior Planning Prevents Piss Poor Performance",
+        author: "Samuel Lambert and Ben Rowan",
+        content: ` <br> <i>Sam Lambert – 3D Artist</i>
+        <br><br>
+        The look and feel of a game are often the elements players most focus on when jumping into gameplay. But to get the most out of those elements, the game needs to run well, and as 
+        such it needs to be optimized while still looking good. Graphical optimization within <i>Dread Not</i> primarily takes place at the texture and geometry levels. On the texture side of 
+        things, efforts have been made to optimize texel density for 2k maps where possible while 4k maps have been sparingly used on some of the larger objects. The working textures 
+        are created at much higher resolutions than the final products, allowing for details to be baked down into the completed maps so as to retain a large amount of detail for notably 
+        smaller file sizes. As part of the texture workflow, extensive use of vertex mapping assists with speeding up the process and additionally allows for rapid iteration. Model geometry 
+        is also optimized via a high to low poly workflow, with ratios ranging from 5 to 1 up to 20 to 1 bake from the high poly model’s poly count to the low poly model’s poly count for 
+        adding detail to the texture without drastically increasing the amount of geometry in the model. Another poly count reduction measure is back face culling, in which faces that are 
+        unable to be seen by the player at any time are removed from the model entirely, which also leads to overall higher quality textures due to higher available densities.
+        <br> 
+        <!-- IMAGE_PLACEHOLDER_1 -->
+        <i>Ben Rowan – Technical Manager</i>
+        <br><br>
+        Although graphics optimization relies primarily on the creator, it is up to everyone to ensure that a game runs as smoothly as possible. Recognizing how your art is computed within 
+        a game engine is crucial to understanding the impact of your work on a game’s performance. While you may think that a model with 20,000 faces is quite optimal, if that model is 
+        multiplied in highly concentrated areas, you’ll feel first-hand how un-optimal that number becomes. 
+        <br><br>
+        Due to the nature of how tight and compact our game is, it’s easy to forget how dense 3D models can get. As the most experienced member of the team with Unreal Engine 5, I took the 
+        liberty of calculating just how much impact 3D models in particular were having on our game’s performance. 
+        <br><br>
+        Checks and balances are how you make a game, and making sure to verify and test aspects for performance and functionality is essential as a programmer. So, it is logical to assume 
+        that this is the same case for the art pipeline. Making sure that models, textures, and VFX are created in such a way to both look at the way they are intended and perform with 
+        maximum efficiency is critical. And although we programmers might have a lot on our plate, sometimes it doesn’t hurt to join this initiative and go the extra mile to make the game 
+        the best it can be.
+        `,
+        images: [
+            "BlogImages/Blog16/optimatization.png"
+        ],
+        imageCaptions: [
+            "Side by side example of high to low poly modeling: the left model has just over 2200 triangles (low poly), where as the right model has almost 20,000 triangles (high poly)"
+        ]
+    },
+    17: {
+        title: "Tuning In to Dread Not's Audio",
+        author: "Jacob Sherrick, Eomji Sohn, Ed Kuri, and Karina Wang",
+        content: ` <br> We are the audio team for <i>Dread Not</i>, responsible for crafting every aspect of the game’s soundscape—from original music and immersive sound design to seamless in-game 
+        audio implementation.
+        <br><br>
+        <i>Dread Not</i> offers a wealth of unique and compelling opportunities for audio design, from the ominous presence of the sea monster Charlie to the creaking, decaying submarine and a fully 
+        interactive in-game radio station. With each of us bringing experience in both music composition and sound design, we divide the audio tasks based on our individual strengths and creative 
+        interests to ensure a high-quality, resonant experience.
+        <br><br>
+        Jacob composed the game’s main theme with the goal of capturing the intensity and urgency that defines <i>Dread Not</i>. The track features asymmetrical phrasing in groups of five, a driving 
+        percussive backbone, and creative use of sonic elements like sonar pings, custom synth textures, electronic drums, and machine-like sounds to evoke a gritty, mechanical atmosphere.
+        <br><br>
+        At the start of the project, we were introduced to a rich narrative foundation, and the concept of a diegetic audio system, such as a radio or cassette player. We saw this as a unique 
+        opportunity to deepen player immersion through sound. From this, the idea of an original radio station was born—a vehicle to deliver in-world lore, period context, and storytelling 
+        through music and advertisements. Ed led the creation of this system, collaborating with voice actors and songwriters, and contributing original compositions to bring the in-game 
+        broadcast to life.
+        <br> 
+        <!-- IMAGE_PLACEHOLDER_1 -->
+        Eomji leads the audio implementation using Wwise, a powerful middleware tool that allows us to integrate dynamic audio into the game engine. This includes programming adaptive music 
+        loops and transitions, triggering sound effects in response to gameplay, simulating environmental acoustics, and syncing audio to non-linear events. As the complexity of the game grows, 
+        so does the intricacy of this implementation process.
+        <br><br>
+        Our team meets regularly throughout the week to align our progress and ensure a unified auditory experience. The collaborative nature of this work has been one of its most fulfilling 
+        aspects, allowing us to blend our talents into a cohesive and immersive sound design.
+        <br><br>
+        It’s been a privilege to work on such an exciting project with this incredible team, and we can’t wait to share what we’ve created as <i>Dread Not</i> continues to evolve!
+        `,
+        images: [
+            "BlogImages/Blog17/radio.png"
+        ],
+        imageCaptions: [
+            "Pilot room radio in game"
+        ]
+    },
+    18: {
+        title: "Do You Copy?",
+        author: "Guinness Bruce",
+        content: ` <br> Over the creation of our game <i>Dread Not</i>, playtester feedback on the puzzle mechanics has been critical to how we polish the game. It has been great reading some of 
+        the comments players have left for us! 
+        <br><br>
+        We really want to hammer home these mechanics to make sure our players will have the best experience. Not only will we be adding a timer to the game to enhance this hectic feeling, 
+        but we will also be adding multiple new puzzles for players to solve so that they can play over and over again and want to keep coming back for more. 
+        <br> 
+        <!-- IMAGE_PLACEHOLDER_1 -->
+        Of course, there have also been some criticisms, mainly targeted around the Pilot, and how their experience feels a lot less intense, since their main job is to relay information to 
+        the Mechanic.
+        <br>
+        <!-- IMAGE_PLACEHOLDER_2 -->
+        In order to combat these issues players have brought up, we have added more time sensitive puzzles and interactables inside of the pilot room. This way, not only will the Pilot have 
+        to talk to the Mechanic, but they will have some of their own puzzles to solve.
+        <br><br>
+        We want to make the best experience for our players, and this is why our team will be playtesting our game multiple times a week from now until release to make sure that our game 
+        stays fun and engaging the entire time. 
+        <br><br>
+        We will also make sure to constantly ask for various outsiders’ opinions on what they think can be improved, so that we can have as many perspectives as possible for our final stages 
+        of development. We want to make absolutely sure that we do our due diligence in finding out what can elevate <i>Dread Not</i> to the next level. 
+        <br><br>
+        Overall, these playtests have been invaluable to us, and we can’t wait to share the depths of what we’ve made with you in the near future!
+        `,
+        images: [
+            "BlogImages/Blog18/image.png",
+            "BlogImages/Blog18/image (1).png"
+        ],
+        imageCaptions: [
+            "Timer until you reach the surface",
+            "Graph of playtester feedback: x-axis is number of responses and y-axis is how engaged players felt as the Pilot, with 1 being very little to 6 being very engaged"
+        ]
+    },
+    19: {
+        title: "A Picture is Worth A Thousand Words",
+        author: "Jon Wolfe",
+        content: ` 
+        <!-- IMAGE_PLACEHOLDER_1 -->
+        <!-- IMAGE_PLACEHOLDER_2 -->
+        <i>“The sub is filled with glowing screens and buttons, details of damaged or duct-taped patches, and colorful props to add visual interest and narrative elements. Environmental 
+        storytelling will be implemented through documents of the sea creature, atmospheric lighting, and AI or VHS audio. This aims to entertain and intrigue, while also giving players 
+        an eerie feeling as they wonder why this two-player crew is tasked with this research mission.”</i>
+        <br><br>
+        Early on, I did a lot of concept art for the environment and props. I imagined the world of <i>Dread Not</i> to be a slightly fantastical version of our 1980’s. The submarine would be 
+        cobbled together from an aging military craft, while having 80’s sci-fi tech for the research equipment. The creature and the vessel should be tied together, as the sub had been 
+        researching it for months with no incident. Why would Charlie attack the craft now?
+        <br><br>
+        The first thing I do when starting an illustration is find inspiration, which involved going to ArtStation to find some reference images. In particular, art by Daniel McGarry 
+        captured the feeling I wanted. I also used teammate Eleanor Berg’s character concepts for splash art, which were great to build from. 
+        <br>
+        <!-- IMAGE_PLACEHOLDER_3 -->
+        <!-- IMAGE_PLACEHOLDER_4 -->
+        <!-- IMAGE_PLACEHOLDER_5 -->
+        Additionally, I turned to the movie Das Boot (1981) as inspiration for the splash art. The scenes where they are stranded on the bottom of the ocean really stuck with me. It also 
+        showed the claustrophobic and chaotic interiors of submarines and demonstrated how someone stepped up while others crumbled in a time of crisis.
+        <br>
+        <!-- IMAGE_PLACEHOLDER_6 -->
+        <!-- IMAGE_PLACEHOLDER_7 -->
+        For the Mechanic art, I wanted to capture the moment of walking into a damaged compartment. In a glance, the player must survey the damage, communicate with their crewmate, and take 
+        action. I used a 3D door asset from Sam Lambert, which was instrumental for framing the Mechanic.  
+        <br><br>
+        The Pilot art portrays a moment of despair. Maybe this was caused by a personal mistake, a sense of doom, or simply being flustered by their partner’s incompetence… or all of the above. 
+        I used Ryan Thiede’s pilot room as a backdrop for the drama taking stage. 
+        <br><br>
+        Together, I wanted the splash art to complement each other. Events are happening at the same time, but the reactions of the characters are completely different. The red that dominates 
+        the Mechanic art has elements of green and orange that dominate the Pilot art and vice versa.
+        <br>
+        <!-- IMAGE_PLACEHOLDER_8 -->
+        <!-- IMAGE_PLACEHOLDER_9 -->
+        `,
+        images: [
+            "BlogImages/Blog19/sub_concept_prop_sonar_3.png",
+            "BlogImages/Blog19/sub_concept_interior_lab.png",
+            "BlogImages/Blog19/ref.jpg",
+            "BlogImages/Blog19/ref2.jpg",
+            "BlogImages/Blog19/pilotConcept.png",
+            "BlogImages/Blog19/1000922458.jpg",
+            "BlogImages/Blog19/das-boot-facts-featured-image-88790.png",
+            "BlogImages/Blog19/sub_poster_mechanic_process.gif",
+            "BlogImages/Blog19/sub_poster_pilot_process.gif"
+        ],
+        imageCaptions: [
+            "Sonar early concept art",
+            "Laboratory early concept art",
+            "Art by Daniel McGarry, https://www.artstation.com/danielmcgarry",
+            "Mechanic color concepts",
+            "Pilot concept art",
+            "Reference image from Das Boot, 1981",
+            "Reference image from Das Boot, 1981",
+            "Mechanic poster timelapse",
+            "Pilot poster timelapse"
+        ]
+    },
+    20: {
+        title: "What's On the Menu?",
+        author: "Jon Wolfe",
+        content: ` <br> I wanted to keep the UI simple, as I am not UI artist by default. So, I leaned into pixel graphics, which I am familiar with and automatically fit our “cassette futurism” 
+        aesthetic. The main inspiration for the pixel UI was from Alien: Isolation. They combined MSDOS elements with simple, branching graphics and symbols. I didn’t want the UI to stand out, 
+        but to be functional, like an old computer would be. I made two fonts, one for general use and a second for a countdown clock.
+        <br> 
+        <!-- IMAGE_PLACEHOLDER_1 -->
+        <!-- IMAGE_PLACEHOLDER_2 -->
+        My original idea for the main menu was the Call of Duty: Black Ops main menu. In the game, you’re able to look around at the cramped, dingy interrogation that was prominently featured in 
+        the campaign. For ours, we similarly thought we wanted the player to be able to move around the cabin freely, but this was eventually changed, thanks in part to one of our programmers, 
+        Victor Mondragon. He had made a prototype for an “on-rails” camera for a previous project. It was a more directed, cinematic experience, which helped with guiding the players into the gameplay.
+        <br><br>
+        I used fellow artist Ryan Thiede’s pilot room as the setting for the main menus. It looked good, was a logical in-game location for the information, and it was already done when I started 
+        working on the UI. This allowed me to envision the different screens and what they would contain. In early February, I took screenshots and roughed in the general layout. I used UI concepts 
+        from another team artist, Elaine Kelling, as my jumping off point. I also want to shout out our programmers Victor, Nathan Morgan-Shimmin, and Guinness Bruce; they did all the implementation 
+        of the scenes I set up in Unreal.
+        <br> 
+        <!-- IMAGE_PLACEHOLDER_3 -->
+        <!-- IMAGE_PLACEHOLDER_4 -->
+        <!-- IMAGE_PLACEHOLDER_5 -->
+        <!-- IMAGE_PLACEHOLDER_6 -->
+        <!-- IMAGE_PLACEHOLDER_7 -->
+        `,
+        images: [
+            "BlogImages/Blog20/ALPHABET.png",
+            "BlogImages/Blog20/wj_ui_corpbranding_siennaallure_cursive.png",
+            "BlogImages/Blog20/wj_ui_main_menu_PREVIEW (1).png",
+            "BlogImages/Blog20/wj_ui_mm_main_menu.png",
+            "BlogImages/Blog20/image (2).png",
+            "BlogImages/Blog20/image (1).png",
+            "BlogImages/Blog20/image (3).png"
+        ],
+        imageCaptions: [
+            "Custom font for Dread Not",
+            "Sienna Allure company logo",
+            "Main menu",
+            "Controls",
+            "Create game menu",
+            "Join lobby menu",
+            "Status terminal in pilot room"
         ]
     }
 };
