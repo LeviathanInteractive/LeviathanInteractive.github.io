@@ -945,7 +945,7 @@ const blogPosts = {
         <br> 
         <!-- IMAGE_PLACEHOLDER_1 -->
         <!-- IMAGE_PLACEHOLDER_2 -->
-        My original idea for the main menu was the Call of Duty: Black Ops main menu. In the game, you’re able to look around at the cramped, dingy interrogation that was prominently featured in 
+        My original idea for the main menu was the <i>Call of Duty: Black Ops</i> main menu. In the game, you’re able to look around at the cramped, dingy interrogation that was prominently featured in 
         the campaign. For ours, we similarly thought we wanted the player to be able to move around the cabin freely, but this was eventually changed, thanks in part to one of our programmers, 
         Victor Mondragon. He had made a prototype for an “on-rails” camera for a previous project. It was a more directed, cinematic experience, which helped with guiding the players into the gameplay.
         <br><br>
