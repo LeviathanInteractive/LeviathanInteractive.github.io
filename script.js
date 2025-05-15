@@ -896,7 +896,7 @@ const blogPosts = {
         <!-- IMAGE_PLACEHOLDER_3 -->
         <!-- IMAGE_PLACEHOLDER_4 -->
         <!-- IMAGE_PLACEHOLDER_5 -->
-        Additionally, I turned to the movie Das Boot (1981) as inspiration for the splash art. The scenes where they are stranded on the bottom of the ocean really stuck with me. It also 
+        Additionally, I turned to the movie <i>Das Boot</i> (1981) as inspiration for the splash art. The scenes where they are stranded on the bottom of the ocean really stuck with me. It also 
         showed the claustrophobic and chaotic interiors of submarines and demonstrated how someone stepped up while others crumbled in a time of crisis.
         <br>
         <!-- IMAGE_PLACEHOLDER_6 -->
